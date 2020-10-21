@@ -1,0 +1,23 @@
+{
+  "bs": 65536,
+  "checkpoint": true,
+  "factor": 5,
+  "gpus": 2,
+  "levels": 4,
+  "lr": 0.01,
+  "lr_decay": 0.25,
+  "lr_decay_patience": 2,
+  "min_lr": 1e-08,
+  "mode": "compare_nets_bs",
+  "n_iterations": 15,
+  "n_test_batches": 150,
+  "n_train_batches": 2000,
+  "net": "Feedforward",
+  "norm_layer": "none",
+  "opt": "adamw",
+  "pde": "BlackScholes",
+  "seed": 0,
+  "unfreeze": "all",
+  "unfreeze_patience": 1,
+  "weight_decay": 0.01
+}

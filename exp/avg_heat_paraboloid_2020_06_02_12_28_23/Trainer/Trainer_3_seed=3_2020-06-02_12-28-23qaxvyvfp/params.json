@@ -1,0 +1,22 @@
+{
+  "bs": 131072,
+  "checkpoint": true,
+  "decay": 0.4,
+  "decay_patience": 2,
+  "factor": 4,
+  "gpus": 2,
+  "levels": 4,
+  "lr": 0.001,
+  "min_lr": 1e-08,
+  "mode": "avg_heat_paraboloid",
+  "n_iterations": 15,
+  "n_test_batches": 150,
+  "n_train_batches": 2000,
+  "net": "multilevel_net",
+  "norm_layer": "batchnorm",
+  "opt": "adamw",
+  "pde": "heat_paraboloid",
+  "seed": 3,
+  "unfreeze": "all",
+  "unfreeze_patience": 1
+}

@@ -1,0 +1,2212 @@
+{
+  "checkpoints": [
+    {
+      "trainable_name": "Trainer",
+      "trial_id": "00000",
+      "config": {
+        "gpus": 4,
+        "mode": "avg_basket",
+        "seed": 0,
+        "checkpoint": true,
+        "pde": "basket",
+        "net": "multilevel_net",
+        "norm_layer": "batchnorm",
+        "opt": "adamw",
+        "bs": 131072,
+        "lr": 0.001,
+        "min_lr": 1e-08,
+        "decay": 0.4,
+        "decay_patience": 1,
+        "unfreeze": "all",
+        "unfreeze_patience": 1,
+        "levels": 4,
+        "factor": 5,
+        "n_iterations": 7,
+        "n_train_batches": 4000,
+        "n_test_batches": 1
+      },
+      "local_dir": "/workspace/package/exp/avg_basket_2020_06_03_05_27_33/Trainer",
+      "evaluated_params": {
+        "seed": 0
+      },
+      "experiment_tag": "0_seed=0",
+      "location": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "8004954a000000000000008c0e7261792e74756e652e747269616c948c084c6f636174696f6e9493942981947d94288c08686f73746e616d65948c0c3139322e3136382e39392e32948c03706964944dc46175622e"
+      },
+      "resources": {
+        "cpu": 1,
+        "gpu": 4,
+        "memory": 0,
+        "object_store_memory": 0,
+        "extra_cpu": 0,
+        "extra_gpu": 0,
+        "extra_memory": 0,
+        "extra_object_store_memory": 0,
+        "custom_resources": {},
+        "extra_custom_resources": {}
+      },
+      "stopping_criterion": {
+        "training_iteration": 7
+      },
+      "loggers": "80044e2e",
+      "sync_to_driver_fn": "80044e2e",
+      "verbose": true,
+      "max_failures": 0,
+      "last_result": {
+        "val": {
+          "current": {
+            "time": 2306.8053064346313,
+            "steps": 1,
+            "overall time": 18466.93364596367,
+            "overall steps": 8.0,
+            "mse": 0.0006277658976614475,
+            "L2^2": 3.049137376365252e-05,
+            "mae": 0.019246239215135574,
+            "L1": 0.0038558607921004295,
+            "L2": 0.005521899470621728
+          },
+          "best": {
+            "mse": 0.0006277658976614475,
+            "L2^2": 3.049137376365252e-05,
+            "mae": 0.019246239215135574,
+            "L1": 0.0038558607921004295
+          },
+          "last improve": {
+            "mse": 0,
+            "L2^2": 0,
+            "mae": 0,
+            "L1": 0
+          }
+        },
+        "train": {
+          "current": {
+            "time": 795.9650537967682,
+            "steps": 4000,
+            "overall time": 5613.387581586838,
+            "overall steps": 28000.0,
+            "mse": 18.8965391459465,
+            "L2^2": 7.357281531095505,
+            "mae": 3.6173182944655418,
+            "L1": 1.8361201379597187,
+            "L2": 2.7124309265114026
+          },
+          "best": {
+            "mse": 18.87986508178711,
+            "L2^2": 7.35231701618433,
+            "mae": 3.6170617042183877,
+            "L1": 1.8351754531413316
+          },
+          "last improve": {
+            "mse": 4,
+            "L2^2": 6,
+            "mae": 2,
+            "L1": 6
+          }
+        },
+        "initial_stats": {
+          "params": 837669,
+          "val_initial": {
+            "time": 2316.9661333560944,
+            "steps": 1,
+            "overall time": 2316.9661333560944,
+            "overall steps": 1.0,
+            "mse": 19.086179733276367,
+            "L2^2": 0.5876297354698181,
+            "mae": 4.167603492736816,
+            "L1": 0.7620346546173096,
+            "L2": 0.7665701112552055
+          }
+        },
+        "lr_groups": [
+          4.096000000000002e-06,
+          4.096000000000002e-06,
+          4.096000000000002e-06,
+          4.096000000000002e-06
+        ],
+        "iter": 6,
+        "done": true,
+        "timesteps_total": null,
+        "episodes_total": null,
+        "training_iteration": 7,
+        "experiment_id": "64f32802c19f435ba31aed7c1daede0f",
+        "date": "2020-06-03_12-08-57",
+        "timestamp": 1591186137,
+        "time_this_iter_s": 3102.771717786789,
+        "time_total_s": 21763.36342406273,
+        "pid": 25028,
+        "hostname": "4bdb2e3a7632",
+        "node_ip": "192.168.99.2",
+        "config": {
+          "gpus": 4,
+          "mode": "avg_basket",
+          "seed": 0,
+          "checkpoint": true,
+          "pde": "basket",
+          "net": "multilevel_net",
+          "norm_layer": "batchnorm",
+          "opt": "adamw",
+          "bs": 131072,
+          "lr": 0.001,
+          "min_lr": 1e-08,
+          "decay": 0.4,
+          "decay_patience": 1,
+          "unfreeze": "all",
+          "unfreeze_patience": 1,
+          "levels": 4,
+          "factor": 5,
+          "n_iterations": 7,
+          "n_train_batches": 4000,
+          "n_test_batches": 1
+        },
+        "time_since_restore": 21763.36342406273,
+        "timesteps_since_restore": 0,
+        "iterations_since_restore": 7,
+        "trial_id": "00000",
+        "experiment_tag": "0_seed=0"
+      },
+      "last_update_time": 1591186137.16749,
+      "metric_analysis": {
+        "iter": {
+          "max": 6,
+          "min": 0,
+          "last": 6
+        },
+        "done": {
+          "max": true,
+          "min": false,
+          "last": true
+        },
+        "training_iteration": {
+          "max": 7,
+          "min": 1,
+          "last": 7
+        },
+        "timestamp": {
+          "max": 1591186137,
+          "min": 1591167498,
+          "last": 1591186137
+        },
+        "time_this_iter_s": {
+          "max": 3125.334635734558,
+          "min": 3099.749395608902,
+          "last": 3102.771717786789
+        },
+        "time_total_s": {
+          "max": 21763.36342406273,
+          "min": 3124.568877220154,
+          "last": 21763.36342406273
+        },
+        "pid": {
+          "max": 25028,
+          "min": 25028,
+          "last": 25028
+        },
+        "time_since_restore": {
+          "max": 21763.36342406273,
+          "min": 3124.568877220154,
+          "last": 21763.36342406273
+        },
+        "timesteps_since_restore": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "iterations_since_restore": {
+          "max": 7,
+          "min": 1,
+          "last": 7
+        },
+        "initial_stats/params": {
+          "max": 837669,
+          "min": 837669,
+          "last": 837669
+        },
+        "config/gpus": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/seed": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "config/checkpoint": {
+          "max": true,
+          "min": true,
+          "last": true
+        },
+        "config/bs": {
+          "max": 131072,
+          "min": 131072,
+          "last": 131072
+        },
+        "config/lr": {
+          "max": 0.001,
+          "min": 0.001,
+          "last": 0.001
+        },
+        "config/min_lr": {
+          "max": 1e-08,
+          "min": 1e-08,
+          "last": 1e-08
+        },
+        "config/decay": {
+          "max": 0.4,
+          "min": 0.4,
+          "last": 0.4
+        },
+        "config/decay_patience": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "config/unfreeze_patience": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "config/levels": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/factor": {
+          "max": 5,
+          "min": 5,
+          "last": 5
+        },
+        "config/n_iterations": {
+          "max": 7,
+          "min": 7,
+          "last": 7
+        },
+        "config/n_train_batches": {
+          "max": 4000,
+          "min": 4000,
+          "last": 4000
+        },
+        "config/n_test_batches": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "val/current/time": {
+          "max": 2307.3995242118835,
+          "min": 2306.8053064346313,
+          "last": 2306.8053064346313
+        },
+        "val/current/steps": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "val/current/overall time": {
+          "max": 18466.93364596367,
+          "min": 4624.17031288147,
+          "last": 18466.93364596367
+        },
+        "val/current/overall steps": {
+          "max": 8.0,
+          "min": 2.0,
+          "last": 8.0
+        },
+        "val/current/mse": {
+          "max": 0.007206115406006575,
+          "min": 0.0006277658976614475,
+          "last": 0.0006277658976614475
+        },
+        "val/current/L2^2": {
+          "max": 0.00043491090764291584,
+          "min": 3.049137376365252e-05,
+          "last": 3.049137376365252e-05
+        },
+        "val/current/mae": {
+          "max": 0.06674600392580032,
+          "min": 0.019246239215135574,
+          "last": 0.019246239215135574
+        },
+        "val/current/L1": {
+          "max": 0.01389235444366932,
+          "min": 0.0038558607921004295,
+          "last": 0.0038558607921004295
+        },
+        "val/current/L2": {
+          "max": 0.020854517679460147,
+          "min": 0.005521899470621728,
+          "last": 0.005521899470621728
+        },
+        "val/best/mse": {
+          "max": 0.007206115406006575,
+          "min": 0.0006277658976614475,
+          "last": 0.0006277658976614475
+        },
+        "val/best/L2^2": {
+          "max": 0.00043491090764291584,
+          "min": 3.049137376365252e-05,
+          "last": 3.049137376365252e-05
+        },
+        "val/best/mae": {
+          "max": 0.06674600392580032,
+          "min": 0.019246239215135574,
+          "last": 0.019246239215135574
+        },
+        "val/best/L1": {
+          "max": 0.01389235444366932,
+          "min": 0.0038558607921004295,
+          "last": 0.0038558607921004295
+        },
+        "val/last improve/mse": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/L2^2": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/mae": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/L1": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "train/current/time": {
+          "max": 817.9340441226959,
+          "min": 792.523668050766,
+          "last": 795.9650537967682
+        },
+        "train/current/steps": {
+          "max": 4000,
+          "min": 4000,
+          "last": 4000
+        },
+        "train/current/overall time": {
+          "max": 5613.387581586838,
+          "min": 817.3633527755737,
+          "last": 5613.387581586838
+        },
+        "train/current/overall steps": {
+          "max": 28000.0,
+          "min": 4000.0,
+          "last": 28000.0
+        },
+        "train/current/mse": {
+          "max": 19.074197357177734,
+          "min": 18.87986508178711,
+          "last": 18.8965391459465
+        },
+        "train/current/L2^2": {
+          "max": 7.357631313681602,
+          "min": 7.35231701618433,
+          "last": 7.357281531095505
+        },
+        "train/current/mae": {
+          "max": 3.6190594236254694,
+          "min": 3.6170617042183877,
+          "last": 3.6173182944655418
+        },
+        "train/current/L1": {
+          "max": 1.8362175986170768,
+          "min": 1.8351754531413316,
+          "last": 1.8361201379597187
+        },
+        "train/current/L2": {
+          "max": 2.7124954034397186,
+          "min": 2.71151563082058,
+          "last": 2.7124309265114026
+        },
+        "train/best/mse": {
+          "max": 18.9265767493248,
+          "min": 18.87986508178711,
+          "last": 18.87986508178711
+        },
+        "train/best/L2^2": {
+          "max": 7.35231701618433,
+          "min": 7.35231701618433,
+          "last": 7.35231701618433
+        },
+        "train/best/mae": {
+          "max": 3.6190594236254694,
+          "min": 3.6170617042183877,
+          "last": 3.6170617042183877
+        },
+        "train/best/L1": {
+          "max": 1.8351754531413316,
+          "min": 1.8351754531413316,
+          "last": 1.8351754531413316
+        },
+        "train/last improve/mse": {
+          "max": 4,
+          "min": 0,
+          "last": 4
+        },
+        "train/last improve/L2^2": {
+          "max": 6,
+          "min": 0,
+          "last": 6
+        },
+        "train/last improve/mae": {
+          "max": 2,
+          "min": 0,
+          "last": 2
+        },
+        "train/last improve/L1": {
+          "max": 6,
+          "min": 0,
+          "last": 6
+        },
+        "initial_stats/val_initial/time": {
+          "max": 2316.9661333560944,
+          "min": 2316.9661333560944,
+          "last": 2316.9661333560944
+        },
+        "initial_stats/val_initial/steps": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "initial_stats/val_initial/overall time": {
+          "max": 2316.9661333560944,
+          "min": 2316.9661333560944,
+          "last": 2316.9661333560944
+        },
+        "initial_stats/val_initial/overall steps": {
+          "max": 1.0,
+          "min": 1.0,
+          "last": 1.0
+        },
+        "initial_stats/val_initial/mse": {
+          "max": 19.086179733276367,
+          "min": 19.086179733276367,
+          "last": 19.086179733276367
+        },
+        "initial_stats/val_initial/L2^2": {
+          "max": 0.5876297354698181,
+          "min": 0.5876297354698181,
+          "last": 0.5876297354698181
+        },
+        "initial_stats/val_initial/mae": {
+          "max": 4.167603492736816,
+          "min": 4.167603492736816,
+          "last": 4.167603492736816
+        },
+        "initial_stats/val_initial/L1": {
+          "max": 0.7620346546173096,
+          "min": 0.7620346546173096,
+          "last": 0.7620346546173096
+        },
+        "initial_stats/val_initial/L2": {
+          "max": 0.7665701112552055,
+          "min": 0.7665701112552055,
+          "last": 0.7665701112552055
+        }
+      },
+      "export_formats": [],
+      "status": "TERMINATED",
+      "start_time": 1591162053.4597917,
+      "logdir": "/workspace/package/exp/avg_basket_2020_06_03_05_27_33/Trainer/Trainer_0_seed=0_2020-06-03_05-27-33n796mv1u",
+      "runner": null,
+      "result_logger": null,
+      "last_debug": 1591186137.167407,
+      "error_file": null,
+      "error_msg": null,
+      "custom_trial_name": null,
+      "saving_to": null,
+      "remote_checkpoint_dir_prefix": null,
+      "checkpoint_freq": 0,
+      "checkpoint_at_end": true,
+      "sync_on_checkpoint": true,
+      "checkpoint_manager": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "8004955c080000000000008c1b7261792e74756e652e636865636b706f696e745f6d616e61676572948c11436865636b706f696e744d616e616765729493942981947d94288c146b6565705f636865636b706f696e74735f6e756d94477ff00000000000008c165f636865636b706f696e745f73636f72655f6465736394898c165f636865636b706f696e745f73636f72655f61747472948c12747261696e696e675f697465726174696f6e948c1c6e65776573745f70657273697374656e745f636865636b706f696e749468008c0a436865636b706f696e749493942981947d94288c0773746f72616765948c0a70657273697374656e74948c0576616c7565948c812f776f726b73706163652f7061636b6167652f6578702f6176675f6261736b65745f323032305f30365f30335f30355f32375f33332f547261696e65722f547261696e65725f305f736565643d305f323032302d30362d30335f30352d32372d33336e3739366d7631752f636865636b706f696e745f372f6d6f64656c2e707468948c06726573756c74947d94288c0376616c947d94288c0763757272656e74947d94288c0474696d65944740a2059c512000008c057374657073944b018c0c6f766572616c6c2074696d65944740d208bbc0db00008c0d6f766572616c6c207374657073944740200000000000008c036d736594473f449215000000008c044c325e3294473efff8f7400000008c036d616594473f93b549400000008c024c3194473f6f9653800000008c024c3294473f769e219a35bd5a758c0462657374947d94288c036d736594473f449215000000008c044c325e3294473efff8f7400000008c036d616594473f93b549400000008c024c3194473f6f965380000000758c0c6c61737420696d70726f7665947d94288c036d7365944b008c044c325e32944b008c036d6165944b008c024c31944b0075758c05747261696e947d94288c0763757272656e74947d94288c0474696d6594474088dfb86e2000008c057374657073944da00f8c0c6f766572616c6c2074696d65944740b5ed63388c00008c0d6f766572616c6c207374657073944740db5800000000008c036d736594474032e58396e76c8b8c044c325e329447401d6ddb35ae147b8c036d61659447400cf04492ef9db28c024c3194473ffd60bf828106258c024c3294474005b30efc503421758c0462657374947d94288c036d736594474032e13ed6872b028c044c325e329447401d68c5cab958108c036d61659447400cefbe0bf9db238c024c3194473ffd5ce0ef9a9fbe758c0c6c61737420696d70726f7665947d94288c036d7365944b048c044c325e32944b068c036d6165944b028c024c31944b0675758c0d696e697469616c5f7374617473947d94288c06706172616d73944a25c80c008c0b76616c5f696e697469616c947d94288c0474696d65944740a219eea90800008c057374657073944b018c0c6f766572616c6c2074696d65944740a219eea90800008c0d6f766572616c6c20737465707394473ff00000000000008c036d736594474033160fe00000008c044c325e3294473fe2cddce00000008c036d616594474010aba0400000008c024c3194473fe86296800000008c024c3294473fe887be0abdd47e75758c096c725f67726f757073945d9428473ed12e0be826d697473ed12e0be826d697473ed12e0be826d697473ed12e0be826d697658c0469746572944b068c04646f6e6594888c0f74696d6573746570735f746f74616c944e8c0e657069736f6465735f746f74616c944e8c12747261696e696e675f697465726174696f6e944b078c0d6578706572696d656e745f6964948c203634663332383032633139663433356261333161656437633164616564653066948c0464617465948c13323032302d30362d30335f31322d30382d3537948c0974696d657374616d70944ad992d75e8c1074696d655f746869735f697465725f73944740a83d8b1e9800008c0c74696d655f746f74616c5f73944740d540d7425700008c03706964944dc4618c08686f73746e616d65948c0c346264623265336137363332948c076e6f64655f6970948c0c3139322e3136382e39392e32948c06636f6e666967947d94288c0467707573944b048c046d6f6465948c0a6176675f6261736b6574948c0473656564944b008c0a636865636b706f696e7494888c03706465948c066261736b6574948c036e6574948c0e6d756c74696c6576656c5f6e6574948c0a6e6f726d5f6c61796572948c0962617463686e6f726d948c036f7074948c056164616d77948c026273944a000002008c026c7294473f50624dd2f1a9fc8c066d696e5f6c7294473e45798ee2308c3a8c05646563617994473fd999999999999a8c0e64656361795f70617469656e6365944b018c08756e667265657a65948c03616c6c948c11756e667265657a655f70617469656e6365944b018c066c6576656c73944b048c06666163746f72944b058c0c6e5f697465726174696f6e73944b078c0f6e5f747261696e5f62617463686573944da00f8c0e6e5f746573745f62617463686573944b01758c1274696d655f73696e63655f726573746f7265944740d540d7425700008c1774696d6573746570735f73696e63655f726573746f7265944b008c18697465726174696f6e735f73696e63655f726573746f7265944b078c08747269616c5f6964948c053030303030948c0e6578706572696d656e745f746167948c08305f736565643d30947575628c186e65776573745f6d656d6f72795f636865636b706f696e7494680b2981947d9428680e8c066d656d6f72799468104e68127d9475628c115f626573745f636865636b706f696e7473945d9468008c0951756575654974656d9493942981947d94288c087072696f72697479944b076810680c7562618c0b5f6d656d62657273686970948f9428680c9075622e"
+      },
+      "restore_path": null,
+      "restoring_from": null,
+      "num_failures": 0,
+      "results": "80044e2e",
+      "best_result": "80044e2e",
+      "param_config": "80044e2e",
+      "extra_arg": "80044e2e",
+      "_nonjson_fields": [
+        "loggers",
+        "sync_to_driver_fn",
+        "results",
+        "best_result",
+        "param_config",
+        "extra_arg"
+      ],
+      "resuming_from": null,
+      "__logger_started__": false
+    },
+    {
+      "trainable_name": "Trainer",
+      "trial_id": "00001",
+      "config": {
+        "gpus": 4,
+        "mode": "avg_basket",
+        "seed": 1,
+        "checkpoint": true,
+        "pde": "basket",
+        "net": "multilevel_net",
+        "norm_layer": "batchnorm",
+        "opt": "adamw",
+        "bs": 131072,
+        "lr": 0.001,
+        "min_lr": 1e-08,
+        "decay": 0.4,
+        "decay_patience": 1,
+        "unfreeze": "all",
+        "unfreeze_patience": 1,
+        "levels": 4,
+        "factor": 5,
+        "n_iterations": 7,
+        "n_train_batches": 4000,
+        "n_test_batches": 1
+      },
+      "local_dir": "/workspace/package/exp/avg_basket_2020_06_03_05_27_33/Trainer",
+      "evaluated_params": {
+        "seed": 1
+      },
+      "experiment_tag": "1_seed=1",
+      "location": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "8004954a000000000000008c0e7261792e74756e652e747269616c948c084c6f636174696f6e9493942981947d94288c08686f73746e616d65948c0c3139322e3136382e39392e32948c03706964944db86175622e"
+      },
+      "resources": {
+        "cpu": 1,
+        "gpu": 4,
+        "memory": 0,
+        "object_store_memory": 0,
+        "extra_cpu": 0,
+        "extra_gpu": 0,
+        "extra_memory": 0,
+        "extra_object_store_memory": 0,
+        "custom_resources": {},
+        "extra_custom_resources": {}
+      },
+      "stopping_criterion": {
+        "training_iteration": 7
+      },
+      "loggers": "80044e2e",
+      "sync_to_driver_fn": "80044e2e",
+      "verbose": true,
+      "max_failures": 0,
+      "last_result": {
+        "val": {
+          "current": {
+            "time": 2309.540876150131,
+            "steps": 1,
+            "overall time": 18476.139590024948,
+            "overall steps": 8.0,
+            "mse": 0.0006582555361092091,
+            "L2^2": 3.31360351992771e-05,
+            "mae": 0.019631236791610718,
+            "L1": 0.003943538758903742,
+            "L2": 0.005756390813632888
+          },
+          "best": {
+            "mse": 0.0006582555361092091,
+            "L2^2": 3.31360351992771e-05,
+            "mae": 0.019631236791610718,
+            "L1": 0.003943538758903742
+          },
+          "last improve": {
+            "mse": 0,
+            "L2^2": 0,
+            "mae": 0,
+            "L1": 0
+          }
+        },
+        "train": {
+          "current": {
+            "time": 800.6773543357849,
+            "steps": 4000,
+            "overall time": 5633.043504953384,
+            "overall steps": 28000.0,
+            "mse": 19.059401655197142,
+            "L2^2": 7.356826536774635,
+            "mae": 3.6172421340346337,
+            "L1": 1.8361885909438134,
+            "L2": 2.712347053157954
+          },
+          "best": {
+            "mse": 18.904525536060333,
+            "L2^2": 7.352488993793726,
+            "mae": 3.6172181397676466,
+            "L1": 1.835274425521493
+          },
+          "last improve": {
+            "mse": 4,
+            "L2^2": 6,
+            "mae": 4,
+            "L1": 6
+          }
+        },
+        "initial_stats": {
+          "params": 837669,
+          "val_initial": {
+            "time": 2311.8290598392487,
+            "steps": 1,
+            "overall time": 2311.8290598392487,
+            "overall steps": 1.0,
+            "mse": 20.25891876220703,
+            "L2^2": 0.6335892081260681,
+            "mae": 4.310966491699219,
+            "L1": 0.7923070192337036,
+            "L2": 0.7959831707555557
+          }
+        },
+        "lr_groups": [
+          4.096000000000002e-06,
+          4.096000000000002e-06,
+          4.096000000000002e-06,
+          4.096000000000002e-06
+        ],
+        "iter": 6,
+        "done": true,
+        "timesteps_total": null,
+        "episodes_total": null,
+        "training_iteration": 7,
+        "experiment_id": "efe748210b0c476fbbd67de998d26816",
+        "date": "2020-06-03_12-09-25",
+        "timestamp": 1591186165,
+        "time_this_iter_s": 3110.2192392349243,
+        "time_total_s": 21797.362389326096,
+        "pid": 25016,
+        "hostname": "4bdb2e3a7632",
+        "node_ip": "192.168.99.2",
+        "config": {
+          "gpus": 4,
+          "mode": "avg_basket",
+          "seed": 1,
+          "checkpoint": true,
+          "pde": "basket",
+          "net": "multilevel_net",
+          "norm_layer": "batchnorm",
+          "opt": "adamw",
+          "bs": 131072,
+          "lr": 0.001,
+          "min_lr": 1e-08,
+          "decay": 0.4,
+          "decay_patience": 1,
+          "unfreeze": "all",
+          "unfreeze_patience": 1,
+          "levels": 4,
+          "factor": 5,
+          "n_iterations": 7,
+          "n_train_batches": 4000,
+          "n_test_batches": 1
+        },
+        "time_since_restore": 21797.362389326096,
+        "timesteps_since_restore": 0,
+        "iterations_since_restore": 7,
+        "trial_id": "00001",
+        "experiment_tag": "1_seed=1"
+      },
+      "last_update_time": 1591186165.99052,
+      "metric_analysis": {
+        "iter": {
+          "max": 6,
+          "min": 0,
+          "last": 6
+        },
+        "done": {
+          "max": true,
+          "min": false,
+          "last": true
+        },
+        "training_iteration": {
+          "max": 7,
+          "min": 1,
+          "last": 7
+        },
+        "timestamp": {
+          "max": 1591186165,
+          "min": 1591167492,
+          "last": 1591186165
+        },
+        "time_this_iter_s": {
+          "max": 3123.776811361313,
+          "min": 3108.3506927490234,
+          "last": 3110.2192392349243
+        },
+        "time_total_s": {
+          "max": 21797.362389326096,
+          "min": 3123.776811361313,
+          "last": 21797.362389326096
+        },
+        "pid": {
+          "max": 25016,
+          "min": 25016,
+          "last": 25016
+        },
+        "time_since_restore": {
+          "max": 21797.362389326096,
+          "min": 3123.776811361313,
+          "last": 21797.362389326096
+        },
+        "timesteps_since_restore": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "iterations_since_restore": {
+          "max": 7,
+          "min": 1,
+          "last": 7
+        },
+        "initial_stats/params": {
+          "max": 837669,
+          "min": 837669,
+          "last": 837669
+        },
+        "config/gpus": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/seed": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "config/checkpoint": {
+          "max": true,
+          "min": true,
+          "last": true
+        },
+        "config/bs": {
+          "max": 131072,
+          "min": 131072,
+          "last": 131072
+        },
+        "config/lr": {
+          "max": 0.001,
+          "min": 0.001,
+          "last": 0.001
+        },
+        "config/min_lr": {
+          "max": 1e-08,
+          "min": 1e-08,
+          "last": 1e-08
+        },
+        "config/decay": {
+          "max": 0.4,
+          "min": 0.4,
+          "last": 0.4
+        },
+        "config/decay_patience": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "config/unfreeze_patience": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "config/levels": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/factor": {
+          "max": 5,
+          "min": 5,
+          "last": 5
+        },
+        "config/n_iterations": {
+          "max": 7,
+          "min": 7,
+          "last": 7
+        },
+        "config/n_train_batches": {
+          "max": 4000,
+          "min": 4000,
+          "last": 4000
+        },
+        "config/n_test_batches": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "val/current/time": {
+          "max": 2309.540876150131,
+          "min": 2308.939467906952,
+          "last": 2309.540876150131
+        },
+        "val/current/steps": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "val/current/overall time": {
+          "max": 18476.139590024948,
+          "min": 4620.768527746201,
+          "last": 18476.139590024948
+        },
+        "val/current/overall steps": {
+          "max": 8.0,
+          "min": 2.0,
+          "last": 8.0
+        },
+        "val/current/mse": {
+          "max": 0.009865133091807365,
+          "min": 0.0006582555361092091,
+          "last": 0.0006582555361092091
+        },
+        "val/current/L2^2": {
+          "max": 0.0007569519802927971,
+          "min": 3.31360351992771e-05,
+          "last": 3.31360351992771e-05
+        },
+        "val/current/mae": {
+          "max": 0.07018472254276276,
+          "min": 0.019631236791610718,
+          "last": 0.019631236791610718
+        },
+        "val/current/L1": {
+          "max": 0.015409871935844421,
+          "min": 0.003943538758903742,
+          "last": 0.003943538758903742
+        },
+        "val/current/L2": {
+          "max": 0.027512760317583495,
+          "min": 0.005756390813632888,
+          "last": 0.005756390813632888
+        },
+        "val/best/mse": {
+          "max": 0.009865133091807365,
+          "min": 0.0006582555361092091,
+          "last": 0.0006582555361092091
+        },
+        "val/best/L2^2": {
+          "max": 0.0007569519802927971,
+          "min": 3.31360351992771e-05,
+          "last": 3.31360351992771e-05
+        },
+        "val/best/mae": {
+          "max": 0.07018472254276276,
+          "min": 0.019631236791610718,
+          "last": 0.019631236791610718
+        },
+        "val/best/L1": {
+          "max": 0.015409871935844421,
+          "min": 0.003943538758903742,
+          "last": 0.003943538758903742
+        },
+        "val/last improve/mse": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/L2^2": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/mae": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/L1": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "train/current/time": {
+          "max": 814.8357901573181,
+          "min": 799.0782947540283,
+          "last": 800.6773543357849
+        },
+        "train/current/steps": {
+          "max": 4000,
+          "min": 4000,
+          "last": 4000
+        },
+        "train/current/overall time": {
+          "max": 5633.043504953384,
+          "min": 814.8357901573181,
+          "last": 5633.043504953384
+        },
+        "train/current/overall steps": {
+          "max": 28000.0,
+          "min": 4000.0,
+          "last": 28000.0
+        },
+        "train/current/mse": {
+          "max": 19.50477870941162,
+          "min": 18.904525536060333,
+          "last": 19.059401655197142
+        },
+        "train/current/L2^2": {
+          "max": 7.357310759067535,
+          "min": 7.352488993793726,
+          "last": 7.356826536774635
+        },
+        "train/current/mae": {
+          "max": 3.6195612578988077,
+          "min": 3.6172181397676466,
+          "last": 3.6172421340346337
+        },
+        "train/current/L1": {
+          "max": 1.8362613760232926,
+          "min": 1.835274425521493,
+          "last": 1.8361885909438134
+        },
+        "train/current/L2": {
+          "max": 2.7124363142878645,
+          "min": 2.711547343085443,
+          "last": 2.712347053157954
+        },
+        "train/best/mse": {
+          "max": 18.995644669055938,
+          "min": 18.904525536060333,
+          "last": 18.904525536060333
+        },
+        "train/best/L2^2": {
+          "max": 7.352488993793726,
+          "min": 7.352488993793726,
+          "last": 7.352488993793726
+        },
+        "train/best/mae": {
+          "max": 3.6195612578988077,
+          "min": 3.6172181397676466,
+          "last": 3.6172181397676466
+        },
+        "train/best/L1": {
+          "max": 1.835274425521493,
+          "min": 1.835274425521493,
+          "last": 1.835274425521493
+        },
+        "train/last improve/mse": {
+          "max": 4,
+          "min": 0,
+          "last": 4
+        },
+        "train/last improve/L2^2": {
+          "max": 6,
+          "min": 0,
+          "last": 6
+        },
+        "train/last improve/mae": {
+          "max": 4,
+          "min": 0,
+          "last": 4
+        },
+        "train/last improve/L1": {
+          "max": 6,
+          "min": 0,
+          "last": 6
+        },
+        "initial_stats/val_initial/time": {
+          "max": 2311.8290598392487,
+          "min": 2311.8290598392487,
+          "last": 2311.8290598392487
+        },
+        "initial_stats/val_initial/steps": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "initial_stats/val_initial/overall time": {
+          "max": 2311.8290598392487,
+          "min": 2311.8290598392487,
+          "last": 2311.8290598392487
+        },
+        "initial_stats/val_initial/overall steps": {
+          "max": 1.0,
+          "min": 1.0,
+          "last": 1.0
+        },
+        "initial_stats/val_initial/mse": {
+          "max": 20.25891876220703,
+          "min": 20.25891876220703,
+          "last": 20.25891876220703
+        },
+        "initial_stats/val_initial/L2^2": {
+          "max": 0.6335892081260681,
+          "min": 0.6335892081260681,
+          "last": 0.6335892081260681
+        },
+        "initial_stats/val_initial/mae": {
+          "max": 4.310966491699219,
+          "min": 4.310966491699219,
+          "last": 4.310966491699219
+        },
+        "initial_stats/val_initial/L1": {
+          "max": 0.7923070192337036,
+          "min": 0.7923070192337036,
+          "last": 0.7923070192337036
+        },
+        "initial_stats/val_initial/L2": {
+          "max": 0.7959831707555557,
+          "min": 0.7959831707555557,
+          "last": 0.7959831707555557
+        }
+      },
+      "export_formats": [],
+      "status": "TERMINATED",
+      "start_time": 1591162053.5887434,
+      "logdir": "/workspace/package/exp/avg_basket_2020_06_03_05_27_33/Trainer/Trainer_1_seed=1_2020-06-03_05-27-33rzcxld5k",
+      "runner": null,
+      "result_logger": null,
+      "last_debug": 1591186165.9905026,
+      "error_file": null,
+      "error_msg": null,
+      "custom_trial_name": null,
+      "saving_to": null,
+      "remote_checkpoint_dir_prefix": null,
+      "checkpoint_freq": 0,
+      "checkpoint_at_end": true,
+      "sync_on_checkpoint": true,
+      "checkpoint_manager": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "8004955c080000000000008c1b7261792e74756e652e636865636b706f696e745f6d616e61676572948c11436865636b706f696e744d616e616765729493942981947d94288c146b6565705f636865636b706f696e74735f6e756d94477ff00000000000008c165f636865636b706f696e745f73636f72655f6465736394898c165f636865636b706f696e745f73636f72655f61747472948c12747261696e696e675f697465726174696f6e948c1c6e65776573745f70657273697374656e745f636865636b706f696e749468008c0a436865636b706f696e749493942981947d94288c0773746f72616765948c0a70657273697374656e74948c0576616c7565948c812f776f726b73706163652f7061636b6167652f6578702f6176675f6261736b65745f323032305f30365f30335f30355f32375f33332f547261696e65722f547261696e65725f315f736565643d315f323032302d30362d30335f30352d32372d3333727a63786c64356b2f636865636b706f696e745f372f6d6f64656c2e707468948c06726573756c74947d94288c0376616c947d94288c0763757272656e74947d94288c0474696d65944740a20b14edb800008c057374657073944b018c0c6f766572616c6c2074696d65944740d20b08ef0b00008c0d6f766572616c6c207374657073944740200000000000008c036d736594473f4591d9000000008c044c325e3294473f015f71800000008c036d616594473f941a36000000008c024c3194473f702719a00000008c024c3294473f7794036499cc05758c0462657374947d94288c036d736594473f4591d9000000008c044c325e3294473f015f71800000008c036d616594473f941a36000000008c024c3194473f702719a0000000758c0c6c61737420696d70726f7665947d94288c036d7365944b008c044c325e32944b008c036d6165944b008c024c31944b0075758c05747261696e947d94288c0763757272656e74947d94288c0474696d6594474089056b38c000008c057374657073944da00f8c0c6f766572616c6c2074696d65944740b6010b232400008c0d6f766572616c6c207374657073944740db5800000000008c036d7365944740330f34f26666668c044c325e329447401d6d63ef872b028c036d61659447400cf01ca4db22d18c024c3194473ffd610749b645a28c024c3294474005b2e30305b91c758c0462657374947d94288c036d736594474032e78efc4bc6a88c044c325e329447401d68f2dff22d0e8c036d61659447400cf010106666668c024c3194473ffd5d48b74ccccd758c0c6c61737420696d70726f7665947d94288c036d7365944b048c044c325e32944b068c036d6165944b048c024c31944b0675758c0d696e697469616c5f7374617473947d94288c06706172616d73944a25c80c008c0b76616c5f696e697469616c947d94288c0474696d65944740a20fa87a8800008c057374657073944b018c0c6f766572616c6c2074696d65944740a20fa87a8800008c0d6f766572616c6c20737465707394473ff00000000000008c036d7365944740344248800000008c044c325e3294473fe4465ce00000008c036d6165944740113e6e000000008c024c3194473fe95a94400000008c024c3294473fe978b1b2d1f7c575758c096c725f67726f757073945d9428473ed12e0be826d697473ed12e0be826d697473ed12e0be826d697473ed12e0be826d697658c0469746572944b068c04646f6e6594888c0f74696d6573746570735f746f74616c944e8c0e657069736f6465735f746f74616c944e8c12747261696e696e675f697465726174696f6e944b078c0d6578706572696d656e745f6964948c206566653734383231306230633437366662626436376465393938643236383136948c0464617465948c13323032302d30362d30335f31322d30392d3235948c0974696d657374616d70944af592d75e8c1074696d655f746869735f697465725f73944740a84c70402000008c0c74696d655f746f74616c5f73944740d54957316300008c03706964944db8618c08686f73746e616d65948c0c346264623265336137363332948c076e6f64655f6970948c0c3139322e3136382e39392e32948c06636f6e666967947d94288c0467707573944b048c046d6f6465948c0a6176675f6261736b6574948c0473656564944b018c0a636865636b706f696e7494888c03706465948c066261736b6574948c036e6574948c0e6d756c74696c6576656c5f6e6574948c0a6e6f726d5f6c61796572948c0962617463686e6f726d948c036f7074948c056164616d77948c026273944a000002008c026c7294473f50624dd2f1a9fc8c066d696e5f6c7294473e45798ee2308c3a8c05646563617994473fd999999999999a8c0e64656361795f70617469656e6365944b018c08756e667265657a65948c03616c6c948c11756e667265657a655f70617469656e6365944b018c066c6576656c73944b048c06666163746f72944b058c0c6e5f697465726174696f6e73944b078c0f6e5f747261696e5f62617463686573944da00f8c0e6e5f746573745f62617463686573944b01758c1274696d655f73696e63655f726573746f7265944740d54957316300008c1774696d6573746570735f73696e63655f726573746f7265944b008c18697465726174696f6e735f73696e63655f726573746f7265944b078c08747269616c5f6964948c053030303031948c0e6578706572696d656e745f746167948c08315f736565643d31947575628c186e65776573745f6d656d6f72795f636865636b706f696e7494680b2981947d9428680e8c066d656d6f72799468104e68127d9475628c115f626573745f636865636b706f696e7473945d9468008c0951756575654974656d9493942981947d94288c087072696f72697479944b076810680c7562618c0b5f6d656d62657273686970948f9428680c9075622e"
+      },
+      "restore_path": null,
+      "restoring_from": null,
+      "num_failures": 0,
+      "results": "80044e2e",
+      "best_result": "80044e2e",
+      "param_config": "80044e2e",
+      "extra_arg": "80044e2e",
+      "_nonjson_fields": [
+        "loggers",
+        "sync_to_driver_fn",
+        "results",
+        "best_result",
+        "param_config",
+        "extra_arg"
+      ],
+      "resuming_from": null,
+      "__logger_started__": false
+    },
+    {
+      "trainable_name": "Trainer",
+      "trial_id": "00002",
+      "config": {
+        "gpus": 4,
+        "mode": "avg_basket",
+        "seed": 2,
+        "checkpoint": true,
+        "pde": "basket",
+        "net": "multilevel_net",
+        "norm_layer": "batchnorm",
+        "opt": "adamw",
+        "bs": 131072,
+        "lr": 0.001,
+        "min_lr": 1e-08,
+        "decay": 0.4,
+        "decay_patience": 1,
+        "unfreeze": "all",
+        "unfreeze_patience": 1,
+        "levels": 4,
+        "factor": 5,
+        "n_iterations": 7,
+        "n_train_batches": 4000,
+        "n_test_batches": 1
+      },
+      "local_dir": "/workspace/package/exp/avg_basket_2020_06_03_05_27_33/Trainer",
+      "evaluated_params": {
+        "seed": 2
+      },
+      "experiment_tag": "2_seed=2",
+      "location": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "8004954a000000000000008c0e7261792e74756e652e747269616c948c084c6f636174696f6e9493942981947d94288c08686f73746e616d65948c0c3139322e3136382e39392e32948c03706964944def6175622e"
+      },
+      "resources": {
+        "cpu": 1,
+        "gpu": 4,
+        "memory": 0,
+        "object_store_memory": 0,
+        "extra_cpu": 0,
+        "extra_gpu": 0,
+        "extra_memory": 0,
+        "extra_object_store_memory": 0,
+        "custom_resources": {},
+        "extra_custom_resources": {}
+      },
+      "stopping_criterion": {
+        "training_iteration": 7
+      },
+      "loggers": "80044e2e",
+      "sync_to_driver_fn": "80044e2e",
+      "verbose": true,
+      "max_failures": 0,
+      "last_result": {
+        "val": {
+          "current": {
+            "time": 3024.552345275879,
+            "steps": 1,
+            "overall time": 19591.59482741356,
+            "overall steps": 8.0,
+            "mse": 0.0006092271651141346,
+            "L2^2": 3.067039142479189e-05,
+            "mae": 0.018854813650250435,
+            "L1": 0.0037715667858719826,
+            "L2": 0.005538085537872441
+          },
+          "best": {
+            "mse": 0.0006092271651141346,
+            "L2^2": 3.067039142479189e-05,
+            "mae": 0.018854813650250435,
+            "L1": 0.0037715667858719826
+          },
+          "last improve": {
+            "mse": 0,
+            "L2^2": 0,
+            "mae": 0,
+            "L1": 0
+          }
+        },
+        "train": {
+          "current": {
+            "time": 1103.1472079753876,
+            "steps": 4000,
+            "overall time": 6410.825726509094,
+            "overall steps": 28000.0,
+            "mse": 19.15454821586609,
+            "L2^2": 7.356986382365227,
+            "mae": 3.617410558283329,
+            "L1": 1.8361725814044476,
+            "L2": 2.712376519284376
+          },
+          "best": {
+            "mse": 18.744866223812103,
+            "L2^2": 7.352606966614723,
+            "mae": 3.617123423039913,
+            "L1": 1.8351069154143334
+          },
+          "last improve": {
+            "mse": 5,
+            "L2^2": 6,
+            "mae": 2,
+            "L1": 6
+          }
+        },
+        "initial_stats": {
+          "params": 837669,
+          "val_initial": {
+            "time": 2317.515909910202,
+            "steps": 1,
+            "overall time": 2317.515909910202,
+            "overall steps": 1.0,
+            "mse": 19.93761444091797,
+            "L2^2": 0.6184598207473755,
+            "mae": 4.267728328704834,
+            "L1": 0.7824287414550781,
+            "L2": 0.7864221644558191
+          }
+        },
+        "lr_groups": [
+          4.096000000000002e-06,
+          4.096000000000002e-06,
+          4.096000000000002e-06,
+          4.096000000000002e-06
+        ],
+        "iter": 6,
+        "done": true,
+        "timesteps_total": null,
+        "episodes_total": null,
+        "training_iteration": 7,
+        "experiment_id": "491f126ad34340d4b78a9b6f25a41490",
+        "date": "2020-06-03_19-22-23",
+        "timestamp": 1591212143,
+        "time_this_iter_s": 4127.703163385391,
+        "time_total_s": 23684.917941570282,
+        "pid": 25071,
+        "hostname": "4bdb2e3a7632",
+        "node_ip": "192.168.99.2",
+        "config": {
+          "gpus": 4,
+          "mode": "avg_basket",
+          "seed": 2,
+          "checkpoint": true,
+          "pde": "basket",
+          "net": "multilevel_net",
+          "norm_layer": "batchnorm",
+          "opt": "adamw",
+          "bs": 131072,
+          "lr": 0.001,
+          "min_lr": 1e-08,
+          "decay": 0.4,
+          "decay_patience": 1,
+          "unfreeze": "all",
+          "unfreeze_patience": 1,
+          "levels": 4,
+          "factor": 5,
+          "n_iterations": 7,
+          "n_train_batches": 4000,
+          "n_test_batches": 1
+        },
+        "time_since_restore": 23684.917941570282,
+        "timesteps_since_restore": 0,
+        "iterations_since_restore": 7,
+        "trial_id": "00002",
+        "experiment_tag": "2_seed=2"
+      },
+      "last_update_time": 1591212143.0775049,
+      "metric_analysis": {
+        "iter": {
+          "max": 6,
+          "min": 0,
+          "last": 6
+        },
+        "done": {
+          "max": true,
+          "min": false,
+          "last": true
+        },
+        "training_iteration": {
+          "max": 7,
+          "min": 1,
+          "last": 7
+        },
+        "timestamp": {
+          "max": 1591212143,
+          "min": 1591191568,
+          "last": 1591212143
+        },
+        "time_this_iter_s": {
+          "max": 4127.703163385391,
+          "min": 3110.817860841751,
+          "last": 4127.703163385391
+        },
+        "time_total_s": {
+          "max": 23684.917941570282,
+          "min": 3110.817860841751,
+          "last": 23684.917941570282
+        },
+        "pid": {
+          "max": 25071,
+          "min": 25071,
+          "last": 25071
+        },
+        "time_since_restore": {
+          "max": 23684.917941570282,
+          "min": 3110.817860841751,
+          "last": 23684.917941570282
+        },
+        "timesteps_since_restore": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "iterations_since_restore": {
+          "max": 7,
+          "min": 1,
+          "last": 7
+        },
+        "initial_stats/params": {
+          "max": 837669,
+          "min": 837669,
+          "last": 837669
+        },
+        "config/gpus": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/seed": {
+          "max": 2,
+          "min": 2,
+          "last": 2
+        },
+        "config/checkpoint": {
+          "max": true,
+          "min": true,
+          "last": true
+        },
+        "config/bs": {
+          "max": 131072,
+          "min": 131072,
+          "last": 131072
+        },
+        "config/lr": {
+          "max": 0.001,
+          "min": 0.001,
+          "last": 0.001
+        },
+        "config/min_lr": {
+          "max": 1e-08,
+          "min": 1e-08,
+          "last": 1e-08
+        },
+        "config/decay": {
+          "max": 0.4,
+          "min": 0.4,
+          "last": 0.4
+        },
+        "config/decay_patience": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "config/unfreeze_patience": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "config/levels": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/factor": {
+          "max": 5,
+          "min": 5,
+          "last": 5
+        },
+        "config/n_iterations": {
+          "max": 7,
+          "min": 7,
+          "last": 7
+        },
+        "config/n_train_batches": {
+          "max": 4000,
+          "min": 4000,
+          "last": 4000
+        },
+        "config/n_test_batches": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "val/current/time": {
+          "max": 3024.552345275879,
+          "min": 2307.7842569351196,
+          "last": 3024.552345275879
+        },
+        "val/current/steps": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "val/current/overall time": {
+          "max": 19591.59482741356,
+          "min": 4626.295298337936,
+          "last": 19591.59482741356
+        },
+        "val/current/overall steps": {
+          "max": 8.0,
+          "min": 2.0,
+          "last": 8.0
+        },
+        "val/current/mse": {
+          "max": 0.005452285520732403,
+          "min": 0.0006092271651141346,
+          "last": 0.0006092271651141346
+        },
+        "val/current/L2^2": {
+          "max": 0.00032344943610951304,
+          "min": 3.067039142479189e-05,
+          "last": 3.067039142479189e-05
+        },
+        "val/current/mae": {
+          "max": 0.05754997581243515,
+          "min": 0.018854813650250435,
+          "last": 0.018854813650250435
+        },
+        "val/current/L1": {
+          "max": 0.012114200741052628,
+          "min": 0.0037715667858719826,
+          "last": 0.0037715667858719826
+        },
+        "val/current/L2": {
+          "max": 0.017984700056145306,
+          "min": 0.005538085537872441,
+          "last": 0.005538085537872441
+        },
+        "val/best/mse": {
+          "max": 0.005452285520732403,
+          "min": 0.0006092271651141346,
+          "last": 0.0006092271651141346
+        },
+        "val/best/L2^2": {
+          "max": 0.00032344943610951304,
+          "min": 3.067039142479189e-05,
+          "last": 3.067039142479189e-05
+        },
+        "val/best/mae": {
+          "max": 0.05754997581243515,
+          "min": 0.018854813650250435,
+          "last": 0.018854813650250435
+        },
+        "val/best/L1": {
+          "max": 0.012114200741052628,
+          "min": 0.0037715667858719826,
+          "last": 0.0037715667858719826
+        },
+        "val/last improve/mse": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/L2^2": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/mae": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/L1": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "train/current/time": {
+          "max": 1103.1472079753876,
+          "min": 798.9003865718842,
+          "last": 1103.1472079753876
+        },
+        "train/current/steps": {
+          "max": 4000,
+          "min": 4000,
+          "last": 4000
+        },
+        "train/current/overall time": {
+          "max": 6410.825726509094,
+          "min": 802.0371463298798,
+          "last": 6410.825726509094
+        },
+        "train/current/overall steps": {
+          "max": 28000.0,
+          "min": 4000.0,
+          "last": 28000.0
+        },
+        "train/current/mse": {
+          "max": 19.43939537239075,
+          "min": 18.744866223812103,
+          "last": 19.15454821586609
+        },
+        "train/current/L2^2": {
+          "max": 7.358116690158844,
+          "min": 7.352606966614723,
+          "last": 7.356986382365227
+        },
+        "train/current/mae": {
+          "max": 3.619367905497551,
+          "min": 3.617123423039913,
+          "last": 3.617410558283329
+        },
+        "train/current/L1": {
+          "max": 1.8363770663142205,
+          "min": 1.8351069154143334,
+          "last": 1.8361725814044476
+        },
+        "train/current/L2": {
+          "max": 2.712584872434196,
+          "min": 2.7115690967804458,
+          "last": 2.712376519284376
+        },
+        "train/best/mse": {
+          "max": 19.43939537239075,
+          "min": 18.744866223812103,
+          "last": 18.744866223812103
+        },
+        "train/best/L2^2": {
+          "max": 7.352606966614723,
+          "min": 7.352606966614723,
+          "last": 7.352606966614723
+        },
+        "train/best/mae": {
+          "max": 3.619367905497551,
+          "min": 3.617123423039913,
+          "last": 3.617123423039913
+        },
+        "train/best/L1": {
+          "max": 1.8351069154143334,
+          "min": 1.8351069154143334,
+          "last": 1.8351069154143334
+        },
+        "train/last improve/mse": {
+          "max": 5,
+          "min": 0,
+          "last": 5
+        },
+        "train/last improve/L2^2": {
+          "max": 6,
+          "min": 0,
+          "last": 6
+        },
+        "train/last improve/mae": {
+          "max": 2,
+          "min": 0,
+          "last": 2
+        },
+        "train/last improve/L1": {
+          "max": 6,
+          "min": 0,
+          "last": 6
+        },
+        "initial_stats/val_initial/time": {
+          "max": 2317.515909910202,
+          "min": 2317.515909910202,
+          "last": 2317.515909910202
+        },
+        "initial_stats/val_initial/steps": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "initial_stats/val_initial/overall time": {
+          "max": 2317.515909910202,
+          "min": 2317.515909910202,
+          "last": 2317.515909910202
+        },
+        "initial_stats/val_initial/overall steps": {
+          "max": 1.0,
+          "min": 1.0,
+          "last": 1.0
+        },
+        "initial_stats/val_initial/mse": {
+          "max": 19.93761444091797,
+          "min": 19.93761444091797,
+          "last": 19.93761444091797
+        },
+        "initial_stats/val_initial/L2^2": {
+          "max": 0.6184598207473755,
+          "min": 0.6184598207473755,
+          "last": 0.6184598207473755
+        },
+        "initial_stats/val_initial/mae": {
+          "max": 4.267728328704834,
+          "min": 4.267728328704834,
+          "last": 4.267728328704834
+        },
+        "initial_stats/val_initial/L1": {
+          "max": 0.7824287414550781,
+          "min": 0.7824287414550781,
+          "last": 0.7824287414550781
+        },
+        "initial_stats/val_initial/L2": {
+          "max": 0.7864221644558191,
+          "min": 0.7864221644558191,
+          "last": 0.7864221644558191
+        }
+      },
+      "export_formats": [],
+      "status": "TERMINATED",
+      "start_time": 1591186137.323013,
+      "logdir": "/workspace/package/exp/avg_basket_2020_06_03_05_27_33/Trainer/Trainer_2_seed=2_2020-06-03_12-08-579wttop2p",
+      "runner": null,
+      "result_logger": null,
+      "last_debug": 1591212143.0774646,
+      "error_file": null,
+      "error_msg": null,
+      "custom_trial_name": null,
+      "saving_to": null,
+      "remote_checkpoint_dir_prefix": null,
+      "checkpoint_freq": 0,
+      "checkpoint_at_end": true,
+      "sync_on_checkpoint": true,
+      "checkpoint_manager": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "8004955c080000000000008c1b7261792e74756e652e636865636b706f696e745f6d616e61676572948c11436865636b706f696e744d616e616765729493942981947d94288c146b6565705f636865636b706f696e74735f6e756d94477ff00000000000008c165f636865636b706f696e745f73636f72655f6465736394898c165f636865636b706f696e745f73636f72655f61747472948c12747261696e696e675f697465726174696f6e948c1c6e65776573745f70657273697374656e745f636865636b706f696e749468008c0a436865636b706f696e749493942981947d94288c0773746f72616765948c0a70657273697374656e74948c0576616c7565948c812f776f726b73706163652f7061636b6167652f6578702f6176675f6261736b65745f323032305f30365f30335f30355f32375f33332f547261696e65722f547261696e65725f325f736565643d325f323032302d30362d30335f31322d30382d3537397774746f7032702f636865636b706f696e745f372f6d6f64656c2e707468948c06726573756c74947d94288c0376616c947d94288c0763757272656e74947d94288c0474696d65944740a7a11acd0000008c057374657073944b018c0c6f766572616c6c2074696d65944740d321e611a700008c0d6f766572616c6c207374657073944740200000000000008c036d736594473f43f691600000008c044c325e3294473f001482a00000008c036d616594473f934ead200000008c024c3194473f6ee58c800000008c024c3294473f76af1a84482442758c0462657374947d94288c036d736594473f43f691600000008c044c325e3294473f001482a00000008c036d616594473f934ead200000008c024c3194473f6ee58c80000000758c0c6c61737420696d70726f7665947d94288c036d7365944b008c044c325e32944b008c036d6165944b008c024c31944b0075758c05747261696e947d94288c0763757272656e74947d94288c0474696d65944740913c96bdb000008c057374657073944da00f8c0c6f766572616c6c2074696d65944740b90ad362d000008c0d6f766572616c6c207374657073944740db5800000000008c036d736594474033279078cccccd8c044c325e329447401d6d8dd69581068c036d61659447400cf074f26041898c024c3194473ffd60f6802f1aa08c024c3294474005b2f275e61e1f758c0462657374947d94288c036d736594474032beaf8d872b028c044c325e329447401d6911ccf7ced98c036d61659447400cefde67bc6a7f8c024c3194473ffd5c9911a5e354758c0c6c61737420696d70726f7665947d94288c036d7365944b058c044c325e32944b068c036d6165944b028c024c31944b0675758c0d696e697469616c5f7374617473947d94288c06706172616d73944a25c80c008c0b76616c5f696e697469616c947d94288c0474696d65944740a21b08255800008c057374657073944b018c0c6f766572616c6c2074696d65944740a21b08255800008c0d6f766572616c6c20737465707394473ff00000000000008c036d736594474033f007800000008c044c325e3294473fe3ca6c400000008c036d6165944740111227600000008c024c3194473fe909a8000000008c024c3294473fe92a5ed0a5fe2c75758c096c725f67726f757073945d9428473ed12e0be826d697473ed12e0be826d697473ed12e0be826d697473ed12e0be826d697658c0469746572944b068c04646f6e6594888c0f74696d6573746570735f746f74616c944e8c0e657069736f6465735f746f74616c944e8c12747261696e696e675f697465726174696f6e944b078c0d6578706572696d656e745f6964948c203439316631323661643334333430643462373861396236663235613431343930948c0464617465948c13323032302d30362d30335f31392d32322d3233948c0974696d657374616d70944a6ff8d75e8c1074696d655f746869735f697465725f73944740b01fb4028400008c0c74696d655f746f74616c5f73944740d7213abf8e00008c03706964944def618c08686f73746e616d65948c0c346264623265336137363332948c076e6f64655f6970948c0c3139322e3136382e39392e32948c06636f6e666967947d94288c0467707573944b048c046d6f6465948c0a6176675f6261736b6574948c0473656564944b028c0a636865636b706f696e7494888c03706465948c066261736b6574948c036e6574948c0e6d756c74696c6576656c5f6e6574948c0a6e6f726d5f6c61796572948c0962617463686e6f726d948c036f7074948c056164616d77948c026273944a000002008c026c7294473f50624dd2f1a9fc8c066d696e5f6c7294473e45798ee2308c3a8c05646563617994473fd999999999999a8c0e64656361795f70617469656e6365944b018c08756e667265657a65948c03616c6c948c11756e667265657a655f70617469656e6365944b018c066c6576656c73944b048c06666163746f72944b058c0c6e5f697465726174696f6e73944b078c0f6e5f747261696e5f62617463686573944da00f8c0e6e5f746573745f62617463686573944b01758c1274696d655f73696e63655f726573746f7265944740d7213abf8e00008c1774696d6573746570735f73696e63655f726573746f7265944b008c18697465726174696f6e735f73696e63655f726573746f7265944b078c08747269616c5f6964948c053030303032948c0e6578706572696d656e745f746167948c08325f736565643d32947575628c186e65776573745f6d656d6f72795f636865636b706f696e7494680b2981947d9428680e8c066d656d6f72799468104e68127d9475628c115f626573745f636865636b706f696e7473945d9468008c0951756575654974656d9493942981947d94288c087072696f72697479944b076810680c7562618c0b5f6d656d62657273686970948f9428680c9075622e"
+      },
+      "restore_path": null,
+      "restoring_from": null,
+      "num_failures": 0,
+      "results": "80044e2e",
+      "best_result": "80044e2e",
+      "param_config": "80044e2e",
+      "extra_arg": "80044e2e",
+      "_nonjson_fields": [
+        "loggers",
+        "sync_to_driver_fn",
+        "results",
+        "best_result",
+        "param_config",
+        "extra_arg"
+      ],
+      "resuming_from": null,
+      "__logger_started__": false
+    },
+    {
+      "trainable_name": "Trainer",
+      "trial_id": "00003",
+      "config": {
+        "gpus": 4,
+        "mode": "avg_basket",
+        "seed": 3,
+        "checkpoint": true,
+        "pde": "basket",
+        "net": "multilevel_net",
+        "norm_layer": "batchnorm",
+        "opt": "adamw",
+        "bs": 131072,
+        "lr": 0.001,
+        "min_lr": 1e-08,
+        "decay": 0.4,
+        "decay_patience": 1,
+        "unfreeze": "all",
+        "unfreeze_patience": 1,
+        "levels": 4,
+        "factor": 5,
+        "n_iterations": 7,
+        "n_train_batches": 4000,
+        "n_test_batches": 1
+      },
+      "local_dir": "/workspace/package/exp/avg_basket_2020_06_03_05_27_33/Trainer",
+      "evaluated_params": {
+        "seed": 3
+      },
+      "experiment_tag": "3_seed=3",
+      "location": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "8004954a000000000000008c0e7261792e74756e652e747269616c948c084c6f636174696f6e9493942981947d94288c08686f73746e616d65948c0c3139322e3136382e39392e32948c03706964944de76175622e"
+      },
+      "resources": {
+        "cpu": 1,
+        "gpu": 4,
+        "memory": 0,
+        "object_store_memory": 0,
+        "extra_cpu": 0,
+        "extra_gpu": 0,
+        "extra_memory": 0,
+        "extra_object_store_memory": 0,
+        "custom_resources": {},
+        "extra_custom_resources": {}
+      },
+      "stopping_criterion": {
+        "training_iteration": 7
+      },
+      "loggers": "80044e2e",
+      "sync_to_driver_fn": "80044e2e",
+      "verbose": true,
+      "max_failures": 0,
+      "last_result": {
+        "val": {
+          "current": {
+            "time": 2357.709577322006,
+            "steps": 1,
+            "overall time": 18870.173850536346,
+            "overall steps": 8.0,
+            "mse": 0.0006961748003959656,
+            "L2^2": 3.822162398137152e-05,
+            "mae": 0.020178981125354767,
+            "L1": 0.004095852375030518,
+            "L2": 0.00618236394766367
+          },
+          "best": {
+            "mse": 0.0006961748003959656,
+            "L2^2": 3.822162398137152e-05,
+            "mae": 0.020178981125354767,
+            "L1": 0.004095852375030518
+          },
+          "last improve": {
+            "mse": 0,
+            "L2^2": 0,
+            "mae": 0,
+            "L1": 0
+          }
+        },
+        "train": {
+          "current": {
+            "time": 1088.2906320095062,
+            "steps": 4000,
+            "overall time": 6437.844413757324,
+            "overall steps": 28000.0,
+            "mse": 18.883138235569,
+            "L2^2": 7.357626632332802,
+            "mae": 3.6173938990831376,
+            "L1": 1.8362043668627739,
+            "L2": 2.712494540516681
+          },
+          "best": {
+            "mse": 18.883138235569,
+            "L2^2": 7.350338985458016,
+            "mae": 3.6173677616119386,
+            "L1": 1.8350359456837178
+          },
+          "last improve": {
+            "mse": 0,
+            "L2^2": 6,
+            "mae": 1,
+            "L1": 6
+          }
+        },
+        "initial_stats": {
+          "params": 837669,
+          "val_initial": {
+            "time": 2315.3576200008392,
+            "steps": 1,
+            "overall time": 2315.3576200008392,
+            "overall steps": 1.0,
+            "mse": 21.78133773803711,
+            "L2^2": 0.6895509958267212,
+            "mae": 4.487841606140137,
+            "L1": 0.8280291557312012,
+            "L2": 0.8303920735572572
+          }
+        },
+        "lr_groups": [
+          4.096000000000002e-06,
+          4.096000000000002e-06,
+          4.096000000000002e-06,
+          4.096000000000002e-06
+        ],
+        "iter": 6,
+        "done": true,
+        "timesteps_total": null,
+        "episodes_total": null,
+        "training_iteration": 7,
+        "experiment_id": "d342bb99c2a640808f331fb8488ab51f",
+        "date": "2020-06-03_19-11-17",
+        "timestamp": 1591211477,
+        "time_this_iter_s": 3446.003578186035,
+        "time_total_s": 22992.67261314392,
+        "pid": 25063,
+        "hostname": "4bdb2e3a7632",
+        "node_ip": "192.168.99.2",
+        "config": {
+          "gpus": 4,
+          "mode": "avg_basket",
+          "seed": 3,
+          "checkpoint": true,
+          "pde": "basket",
+          "net": "multilevel_net",
+          "norm_layer": "batchnorm",
+          "opt": "adamw",
+          "bs": 131072,
+          "lr": 0.001,
+          "min_lr": 1e-08,
+          "decay": 0.4,
+          "decay_patience": 1,
+          "unfreeze": "all",
+          "unfreeze_patience": 1,
+          "levels": 4,
+          "factor": 5,
+          "n_iterations": 7,
+          "n_train_batches": 4000,
+          "n_test_batches": 1
+        },
+        "time_since_restore": 22992.67261314392,
+        "timesteps_since_restore": 0,
+        "iterations_since_restore": 7,
+        "trial_id": "00003",
+        "experiment_tag": "3_seed=3"
+      },
+      "last_update_time": 1591211477.2469223,
+      "metric_analysis": {
+        "iter": {
+          "max": 6,
+          "min": 0,
+          "last": 6
+        },
+        "done": {
+          "max": true,
+          "min": false,
+          "last": true
+        },
+        "training_iteration": {
+          "max": 7,
+          "min": 1,
+          "last": 7
+        },
+        "timestamp": {
+          "max": 1591211477,
+          "min": 1591191600,
+          "last": 1591211477
+        },
+        "time_this_iter_s": {
+          "max": 3507.5428354740143,
+          "min": 3116.082925081253,
+          "last": 3446.003578186035
+        },
+        "time_total_s": {
+          "max": 22992.67261314392,
+          "min": 3116.082925081253,
+          "last": 22992.67261314392
+        },
+        "pid": {
+          "max": 25063,
+          "min": 25063,
+          "last": 25063
+        },
+        "time_since_restore": {
+          "max": 22992.67261314392,
+          "min": 3116.082925081253,
+          "last": 22992.67261314392
+        },
+        "timesteps_since_restore": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "iterations_since_restore": {
+          "max": 7,
+          "min": 1,
+          "last": 7
+        },
+        "initial_stats/params": {
+          "max": 837669,
+          "min": 837669,
+          "last": 837669
+        },
+        "config/gpus": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/seed": {
+          "max": 3,
+          "min": 3,
+          "last": 3
+        },
+        "config/checkpoint": {
+          "max": true,
+          "min": true,
+          "last": true
+        },
+        "config/bs": {
+          "max": 131072,
+          "min": 131072,
+          "last": 131072
+        },
+        "config/lr": {
+          "max": 0.001,
+          "min": 0.001,
+          "last": 0.001
+        },
+        "config/min_lr": {
+          "max": 1e-08,
+          "min": 1e-08,
+          "last": 1e-08
+        },
+        "config/decay": {
+          "max": 0.4,
+          "min": 0.4,
+          "last": 0.4
+        },
+        "config/decay_patience": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "config/unfreeze_patience": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "config/levels": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/factor": {
+          "max": 5,
+          "min": 5,
+          "last": 5
+        },
+        "config/n_iterations": {
+          "max": 7,
+          "min": 7,
+          "last": 7
+        },
+        "config/n_train_batches": {
+          "max": 4000,
+          "min": 4000,
+          "last": 4000
+        },
+        "config/n_test_batches": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "val/current/time": {
+          "max": 2461.3471763134003,
+          "min": 2307.070897579193,
+          "last": 2357.709577322006
+        },
+        "val/current/steps": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "val/current/overall time": {
+          "max": 18870.173850536346,
+          "min": 4622.428517580032,
+          "last": 18870.173850536346
+        },
+        "val/current/overall steps": {
+          "max": 8.0,
+          "min": 2.0,
+          "last": 8.0
+        },
+        "val/current/mse": {
+          "max": 0.005114720202982426,
+          "min": 0.0006961748003959656,
+          "last": 0.0006961748003959656
+        },
+        "val/current/L2^2": {
+          "max": 0.00027526309713721275,
+          "min": 3.822162398137152e-05,
+          "last": 3.822162398137152e-05
+        },
+        "val/current/mae": {
+          "max": 0.05423516035079956,
+          "min": 0.020178981125354767,
+          "last": 0.020178981125354767
+        },
+        "val/current/L1": {
+          "max": 0.01113308034837246,
+          "min": 0.004095852375030518,
+          "last": 0.004095852375030518
+        },
+        "val/current/L2": {
+          "max": 0.016591054732512118,
+          "min": 0.00618236394766367,
+          "last": 0.00618236394766367
+        },
+        "val/best/mse": {
+          "max": 0.005114720202982426,
+          "min": 0.0006961748003959656,
+          "last": 0.0006961748003959656
+        },
+        "val/best/L2^2": {
+          "max": 0.00027526309713721275,
+          "min": 3.822162398137152e-05,
+          "last": 3.822162398137152e-05
+        },
+        "val/best/mae": {
+          "max": 0.05423516035079956,
+          "min": 0.020178981125354767,
+          "last": 0.020178981125354767
+        },
+        "val/best/L1": {
+          "max": 0.01113308034837246,
+          "min": 0.004095852375030518,
+          "last": 0.004095852375030518
+        },
+        "val/last improve/mse": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/L2^2": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/mae": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/L1": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "train/current/time": {
+          "max": 1088.2906320095062,
+          "min": 802.8885319232941,
+          "last": 1088.2906320095062
+        },
+        "train/current/steps": {
+          "max": 4000,
+          "min": 4000,
+          "last": 4000
+        },
+        "train/current/overall time": {
+          "max": 6437.844413757324,
+          "min": 809.0109598636627,
+          "last": 6437.844413757324
+        },
+        "train/current/overall steps": {
+          "max": 28000.0,
+          "min": 4000.0,
+          "last": 28000.0
+        },
+        "train/current/mse": {
+          "max": 19.370754319667817,
+          "min": 18.883138235569,
+          "last": 18.883138235569
+        },
+        "train/current/L2^2": {
+          "max": 7.358475555062294,
+          "min": 7.350338985458016,
+          "last": 7.357626632332802
+        },
+        "train/current/mae": {
+          "max": 3.619667728841305,
+          "min": 3.6173677616119386,
+          "last": 3.6173938990831376
+        },
+        "train/current/L1": {
+          "max": 1.8363632524311542,
+          "min": 1.8350359456837178,
+          "last": 1.8362043668627739
+        },
+        "train/current/L2": {
+          "max": 2.7126510197705667,
+          "min": 2.7111508599592935,
+          "last": 2.712494540516681
+        },
+        "train/best/mse": {
+          "max": 19.10941801595688,
+          "min": 18.883138235569,
+          "last": 18.883138235569
+        },
+        "train/best/L2^2": {
+          "max": 7.350338985458016,
+          "min": 7.350338985458016,
+          "last": 7.350338985458016
+        },
+        "train/best/mae": {
+          "max": 3.619667728841305,
+          "min": 3.6173677616119386,
+          "last": 3.6173677616119386
+        },
+        "train/best/L1": {
+          "max": 1.8350359456837178,
+          "min": 1.8350359456837178,
+          "last": 1.8350359456837178
+        },
+        "train/last improve/mse": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "train/last improve/L2^2": {
+          "max": 6,
+          "min": 0,
+          "last": 6
+        },
+        "train/last improve/mae": {
+          "max": 2,
+          "min": 0,
+          "last": 1
+        },
+        "train/last improve/L1": {
+          "max": 6,
+          "min": 0,
+          "last": 6
+        },
+        "initial_stats/val_initial/time": {
+          "max": 2315.3576200008392,
+          "min": 2315.3576200008392,
+          "last": 2315.3576200008392
+        },
+        "initial_stats/val_initial/steps": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "initial_stats/val_initial/overall time": {
+          "max": 2315.3576200008392,
+          "min": 2315.3576200008392,
+          "last": 2315.3576200008392
+        },
+        "initial_stats/val_initial/overall steps": {
+          "max": 1.0,
+          "min": 1.0,
+          "last": 1.0
+        },
+        "initial_stats/val_initial/mse": {
+          "max": 21.78133773803711,
+          "min": 21.78133773803711,
+          "last": 21.78133773803711
+        },
+        "initial_stats/val_initial/L2^2": {
+          "max": 0.6895509958267212,
+          "min": 0.6895509958267212,
+          "last": 0.6895509958267212
+        },
+        "initial_stats/val_initial/mae": {
+          "max": 4.487841606140137,
+          "min": 4.487841606140137,
+          "last": 4.487841606140137
+        },
+        "initial_stats/val_initial/L1": {
+          "max": 0.8280291557312012,
+          "min": 0.8280291557312012,
+          "last": 0.8280291557312012
+        },
+        "initial_stats/val_initial/L2": {
+          "max": 0.8303920735572572,
+          "min": 0.8303920735572572,
+          "last": 0.8303920735572572
+        }
+      },
+      "export_formats": [],
+      "status": "TERMINATED",
+      "start_time": 1591186166.0992022,
+      "logdir": "/workspace/package/exp/avg_basket_2020_06_03_05_27_33/Trainer/Trainer_3_seed=3_2020-06-03_12-09-26eoy97dsl",
+      "runner": null,
+      "result_logger": null,
+      "last_debug": 1591211477.2468734,
+      "error_file": null,
+      "error_msg": null,
+      "custom_trial_name": null,
+      "saving_to": null,
+      "remote_checkpoint_dir_prefix": null,
+      "checkpoint_freq": 0,
+      "checkpoint_at_end": true,
+      "sync_on_checkpoint": true,
+      "checkpoint_manager": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "8004955c080000000000008c1b7261792e74756e652e636865636b706f696e745f6d616e61676572948c11436865636b706f696e744d616e616765729493942981947d94288c146b6565705f636865636b706f696e74735f6e756d94477ff00000000000008c165f636865636b706f696e745f73636f72655f6465736394898c165f636865636b706f696e745f73636f72655f61747472948c12747261696e696e675f697465726174696f6e948c1c6e65776573745f70657273697374656e745f636865636b706f696e749468008c0a436865636b706f696e749493942981947d94288c0773746f72616765948c0a70657273697374656e74948c0576616c7565948c812f776f726b73706163652f7061636b6167652f6578702f6176675f6261736b65745f323032305f30365f30335f30355f32375f33332f547261696e65722f547261696e65725f335f736565643d335f323032302d30362d30335f31322d30392d3236656f79393764736c2f636865636b706f696e745f372f6d6f64656c2e707468948c06726573756c74947d94288c0376616c947d94288c0763757272656e74947d94288c0474696d65944740a26b6b4db800008c057374657073944b018c0c6f766572616c6c2074696d65944740d26d8b205e00008c0d6f766572616c6c207374657073944740200000000000008c036d736594473f46cff0000000008c044c325e3294473f040a05000000008c036d616594473f94a9cc800000008c024c3194473f70c6d0000000008c024c3294473f7952adaf7996e5758c0462657374947d94288c036d736594473f46cff0000000008c044c325e3294473f040a05000000008c036d616594473f94a9cc800000008c024c3194473f70c6d000000000758c0c6c61737420696d70726f7665947d94288c036d7365944b008c044c325e32944b008c036d6165944b008c024c31944b0075758c05747261696e947d94288c0763757272656e74947d94288c0474696d659447409101299b7000008c057374657073944da00f8c0c6f766572616c6c2074696d65944740b925d82b8000008c0d6f766572616c6c207374657073944740db5800000000008c036d736594474032e21558ef9db28c044c325e329447401d6e35ad0831278c036d61659447400cf06c366a7efa8c024c3194473ffd6117d4872b028c024c3294474005b3305670c813758c0462657374947d94288c036d736594474032e21558ef9db28c044c325e329447401d66bf435439588c036d61659447400cf05e824dd2f28c024c3194473ffd5c4ea6db22d1758c0c6c61737420696d70726f7665947d94288c036d7365944b008c044c325e32944b068c036d6165944b018c024c31944b0675758c0d696e697469616c5f7374617473947d94288c06706172616d73944a25c80c008c0b76616c5f696e697469616c947d94288c0474696d65944740a216b719f800008c057374657073944b018c0c6f766572616c6c2074696d65944740a216b719f800008c0d6f766572616c6c20737465707394473ff00000000000008c036d736594474035c805c00000008c044c325e3294473fe610cd400000008c036d616594474011f38cc00000008c024c3194473fea7f37000000008c024c3294473fea929265d9274a75758c096c725f67726f757073945d9428473ed12e0be826d697473ed12e0be826d697473ed12e0be826d697473ed12e0be826d697658c0469746572944b068c04646f6e6594888c0f74696d6573746570735f746f74616c944e8c0e657069736f6465735f746f74616c944e8c12747261696e696e675f697465726174696f6e944b078c0d6578706572696d656e745f6964948c206433343262623939633261363430383038663333316662383438386162353166948c0464617465948c13323032302d30362d30335f31392d31312d3137948c0974696d657374616d70944ad5f5d75e8c1074696d655f746869735f697465725f73944740aaec01d50000008c0c74696d655f746f74616c5f73944740d6742b0c1800008c03706964944de7618c08686f73746e616d65948c0c346264623265336137363332948c076e6f64655f6970948c0c3139322e3136382e39392e32948c06636f6e666967947d94288c0467707573944b048c046d6f6465948c0a6176675f6261736b6574948c0473656564944b038c0a636865636b706f696e7494888c03706465948c066261736b6574948c036e6574948c0e6d756c74696c6576656c5f6e6574948c0a6e6f726d5f6c61796572948c0962617463686e6f726d948c036f7074948c056164616d77948c026273944a000002008c026c7294473f50624dd2f1a9fc8c066d696e5f6c7294473e45798ee2308c3a8c05646563617994473fd999999999999a8c0e64656361795f70617469656e6365944b018c08756e667265657a65948c03616c6c948c11756e667265657a655f70617469656e6365944b018c066c6576656c73944b048c06666163746f72944b058c0c6e5f697465726174696f6e73944b078c0f6e5f747261696e5f62617463686573944da00f8c0e6e5f746573745f62617463686573944b01758c1274696d655f73696e63655f726573746f7265944740d6742b0c1800008c1774696d6573746570735f73696e63655f726573746f7265944b008c18697465726174696f6e735f73696e63655f726573746f7265944b078c08747269616c5f6964948c053030303033948c0e6578706572696d656e745f746167948c08335f736565643d33947575628c186e65776573745f6d656d6f72795f636865636b706f696e7494680b2981947d9428680e8c066d656d6f72799468104e68127d9475628c115f626573745f636865636b706f696e7473945d9468008c0951756575654974656d9493942981947d94288c087072696f72697479944b076810680c7562618c0b5f6d656d62657273686970948f9428680c9075622e"
+      },
+      "restore_path": null,
+      "restoring_from": null,
+      "num_failures": 0,
+      "results": "80044e2e",
+      "best_result": "80044e2e",
+      "param_config": "80044e2e",
+      "extra_arg": "80044e2e",
+      "_nonjson_fields": [
+        "loggers",
+        "sync_to_driver_fn",
+        "results",
+        "best_result",
+        "param_config",
+        "extra_arg"
+      ],
+      "resuming_from": null,
+      "__logger_started__": false
+    }
+  ],
+  "runner_data": {
+    "_global_time_limit": Infinity,
+    "_total_time": 90238.31636810303,
+    "_iteration": 36,
+    "_has_errored": false,
+    "_fail_fast": false,
+    "_verbose": true,
+    "_server_port": 4321,
+    "_cached_trial_decisions": {},
+    "_should_stop_experiment": false,
+    "_local_checkpoint_dir": "/workspace/package/exp/avg_basket_2020_06_03_05_27_33/Trainer",
+    "_remote_checkpoint_dir": null,
+    "_stopper": {
+      "_type": "CLOUDPICKLE_FALLBACK",
+      "value": "80049527000000000000008c107261792e74756e652e73746f70706572948c0b4e6f6f7053746f707065729493942981942e"
+    },
+    "_resumed": false,
+    "_start_time": 1591162053.3254743,
+    "_last_checkpoint_time": 1591212143.1903682,
+    "_checkpoint_period": 10,
+    "_session_str": "2020-06-03_05-27-33",
+    "checkpoint_file": "/workspace/package/exp/avg_basket_2020_06_03_05_27_33/Trainer/experiment_state-2020-06-03_05-27-33.json",
+    "launch_web_server": false
+  },
+  "stats": {
+    "start_time": 1591162053.3254743,
+    "timestamp": 1591212143.1903682
+  }
+}

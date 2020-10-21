@@ -1,0 +1,23 @@
+{
+  "bs": 131072,
+  "checkpoint": false,
+  "factor": 4,
+  "gpus": 2,
+  "levels": 4,
+  "lr": 0.001,
+  "lr_decay": 0.4,
+  "lr_decay_patience": 2,
+  "min_lr": 1e-08,
+  "mode": "compare_nets_heat",
+  "n_iterations": 15,
+  "n_test_batches": 150,
+  "n_train_batches": 2000,
+  "net": "MultilevelNetNoRes",
+  "norm_layer": "batchnorm",
+  "opt": "adamw",
+  "pde": "HeatParaboloid",
+  "seed": 1,
+  "unfreeze": "all",
+  "unfreeze_patience": 1,
+  "weight_decay": 0.01
+}

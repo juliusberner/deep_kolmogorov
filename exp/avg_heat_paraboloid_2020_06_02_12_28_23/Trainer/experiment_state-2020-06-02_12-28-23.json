@@ -1,0 +1,2212 @@
+{
+  "checkpoints": [
+    {
+      "trainable_name": "Trainer",
+      "trial_id": "00000",
+      "config": {
+        "gpus": 2,
+        "mode": "avg_heat_paraboloid",
+        "seed": 0,
+        "checkpoint": true,
+        "pde": "heat_paraboloid",
+        "net": "multilevel_net",
+        "norm_layer": "batchnorm",
+        "opt": "adamw",
+        "bs": 131072,
+        "lr": 0.001,
+        "min_lr": 1e-08,
+        "decay": 0.4,
+        "decay_patience": 2,
+        "unfreeze": "all",
+        "unfreeze_patience": 1,
+        "levels": 4,
+        "factor": 4,
+        "n_iterations": 15,
+        "n_train_batches": 2000,
+        "n_test_batches": 150
+      },
+      "local_dir": "/workspace/package/exp/avg_heat_paraboloid_2020_06_02_12_28_23/Trainer",
+      "evaluated_params": {
+        "seed": 0
+      },
+      "experiment_tag": "0_seed=0",
+      "location": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "8004954a000000000000008c0e7261792e74756e652e747269616c948c084c6f636174696f6e9493942981947d94288c08686f73746e616d65948c0c3139322e3136382e39392e32948c03706964944dad2975622e"
+      },
+      "resources": {
+        "cpu": 1,
+        "gpu": 2,
+        "memory": 0,
+        "object_store_memory": 0,
+        "extra_cpu": 0,
+        "extra_gpu": 0,
+        "extra_memory": 0,
+        "extra_object_store_memory": 0,
+        "custom_resources": {},
+        "extra_custom_resources": {}
+      },
+      "stopping_criterion": {
+        "training_iteration": 15
+      },
+      "loggers": "80044e2e",
+      "sync_to_driver_fn": "80044e2e",
+      "verbose": true,
+      "max_failures": 0,
+      "last_result": {
+        "val": {
+          "current": {
+            "time": 25.316563367843628,
+            "steps": 150,
+            "overall time": 411.94994354248047,
+            "overall steps": 2400.0,
+            "mse": 0.035156920403242115,
+            "L2^2": 5.724788269920585e-05,
+            "mae": 0.14342708865801493,
+            "L1": 0.005546774786586563,
+            "L2": 0.0075662330587423655
+          },
+          "best": {
+            "mse": 0.035156920403242115,
+            "L2^2": 5.724788269920585e-05,
+            "mae": 0.14342708865801493,
+            "L1": 0.005546774786586563
+          },
+          "last improve": {
+            "mse": 0,
+            "L2^2": 0,
+            "mae": 0,
+            "L1": 0
+          }
+        },
+        "train": {
+          "current": {
+            "time": 941.868047952652,
+            "steps": 2000,
+            "overall time": 14135.003518104553,
+            "overall steps": 30000.0,
+            "mse": 1006.6050293273926,
+            "L2^2": 6.249945039272308,
+            "mae": 20.70045409488678,
+            "L1": 1.525126910150051,
+            "L2": 2.499989007830296
+          },
+          "best": {
+            "mse": 1005.7819519958496,
+            "L2^2": 6.188552237927913,
+            "mae": 20.695673449516296,
+            "L1": 1.5171546883881093
+          },
+          "last improve": {
+            "mse": 8,
+            "L2^2": 14,
+            "mae": 8,
+            "L1": 14
+          }
+        },
+        "initial_stats": {
+          "params": 2380732,
+          "val_initial": {
+            "time": 31.04204249382019,
+            "steps": 150,
+            "overall time": 31.04204249382019,
+            "overall steps": 150.0,
+            "mse": 853.6614286295572,
+            "L2^2": 0.9195789436499278,
+            "mae": 27.476702054341633,
+            "L1": 0.958760358095169,
+            "L2": 0.9589467887479095
+          }
+        },
+        "lr_groups": [
+          1.638400000000001e-06,
+          1.638400000000001e-06,
+          1.638400000000001e-06,
+          1.638400000000001e-06
+        ],
+        "iter": 14,
+        "done": true,
+        "timesteps_total": null,
+        "episodes_total": null,
+        "training_iteration": 15,
+        "experiment_id": "2cca2a5ce54041bcac5cb530780ed806",
+        "date": "2020-06-02_16-30-53",
+        "timestamp": 1591115453,
+        "time_this_iter_s": 967.1931900978088,
+        "time_total_s": 14516.04525089264,
+        "pid": 10669,
+        "hostname": "4bdb2e3a7632",
+        "node_ip": "192.168.99.2",
+        "config": {
+          "gpus": 2,
+          "mode": "avg_heat_paraboloid",
+          "seed": 0,
+          "checkpoint": true,
+          "pde": "heat_paraboloid",
+          "net": "multilevel_net",
+          "norm_layer": "batchnorm",
+          "opt": "adamw",
+          "bs": 131072,
+          "lr": 0.001,
+          "min_lr": 1e-08,
+          "decay": 0.4,
+          "decay_patience": 2,
+          "unfreeze": "all",
+          "unfreeze_patience": 1,
+          "levels": 4,
+          "factor": 4,
+          "n_iterations": 15,
+          "n_train_batches": 2000,
+          "n_test_batches": 150
+        },
+        "time_since_restore": 14516.04525089264,
+        "timesteps_since_restore": 0,
+        "iterations_since_restore": 15,
+        "trial_id": "00000",
+        "experiment_tag": "0_seed=0"
+      },
+      "last_update_time": 1591115453.7017112,
+      "metric_analysis": {
+        "iter": {
+          "max": 14,
+          "min": 0,
+          "last": 14
+        },
+        "done": {
+          "max": true,
+          "min": false,
+          "last": true
+        },
+        "training_iteration": {
+          "max": 15,
+          "min": 1,
+          "last": 15
+        },
+        "timestamp": {
+          "max": 1591115453,
+          "min": 1591101905,
+          "last": 1591115453
+        },
+        "time_this_iter_s": {
+          "max": 968.616598367691,
+          "min": 966.7982952594757,
+          "last": 967.1931900978088
+        },
+        "time_total_s": {
+          "max": 14516.04525089264,
+          "min": 968.1261801719666,
+          "last": 14516.04525089264
+        },
+        "pid": {
+          "max": 10669,
+          "min": 10669,
+          "last": 10669
+        },
+        "time_since_restore": {
+          "max": 14516.04525089264,
+          "min": 968.1261801719666,
+          "last": 14516.04525089264
+        },
+        "timesteps_since_restore": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "iterations_since_restore": {
+          "max": 15,
+          "min": 1,
+          "last": 15
+        },
+        "initial_stats/params": {
+          "max": 2380732,
+          "min": 2380732,
+          "last": 2380732
+        },
+        "config/gpus": {
+          "max": 2,
+          "min": 2,
+          "last": 2
+        },
+        "config/seed": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "config/checkpoint": {
+          "max": true,
+          "min": true,
+          "last": true
+        },
+        "config/bs": {
+          "max": 131072,
+          "min": 131072,
+          "last": 131072
+        },
+        "config/lr": {
+          "max": 0.001,
+          "min": 0.001,
+          "last": 0.001
+        },
+        "config/min_lr": {
+          "max": 1e-08,
+          "min": 1e-08,
+          "last": 1e-08
+        },
+        "config/decay": {
+          "max": 0.4,
+          "min": 0.4,
+          "last": 0.4
+        },
+        "config/decay_patience": {
+          "max": 2,
+          "min": 2,
+          "last": 2
+        },
+        "config/unfreeze_patience": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "config/levels": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/factor": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/n_iterations": {
+          "max": 15,
+          "min": 15,
+          "last": 15
+        },
+        "config/n_train_batches": {
+          "max": 2000,
+          "min": 2000,
+          "last": 2000
+        },
+        "config/n_test_batches": {
+          "max": 150,
+          "min": 150,
+          "last": 150
+        },
+        "val/current/time": {
+          "max": 25.848718643188477,
+          "min": 25.050395011901855,
+          "last": 25.316563367843628
+        },
+        "val/current/steps": {
+          "max": 150,
+          "min": 150,
+          "last": 150
+        },
+        "val/current/overall time": {
+          "max": 411.94994354248047,
+          "min": 56.510685205459595,
+          "last": 411.94994354248047
+        },
+        "val/current/overall steps": {
+          "max": 2400.0,
+          "min": 300.0,
+          "last": 2400.0
+        },
+        "val/current/mse": {
+          "max": 0.29935313244660694,
+          "min": 0.035156920403242115,
+          "last": 0.035156920403242115
+        },
+        "val/current/L2^2": {
+          "max": 0.0004397931972440953,
+          "min": 5.724788269920585e-05,
+          "last": 5.724788269920585e-05
+        },
+        "val/current/mae": {
+          "max": 0.42065576354662576,
+          "min": 0.14342708865801493,
+          "last": 0.14342708865801493
+        },
+        "val/current/L1": {
+          "max": 0.015829004682600498,
+          "min": 0.005546774786586563,
+          "last": 0.005546774786586563
+        },
+        "val/current/L2": {
+          "max": 0.02097124691676905,
+          "min": 0.0075662330587423655,
+          "last": 0.0075662330587423655
+        },
+        "val/best/mse": {
+          "max": 0.2631313860416412,
+          "min": 0.035156920403242115,
+          "last": 0.035156920403242115
+        },
+        "val/best/L2^2": {
+          "max": 0.0004397931972440953,
+          "min": 5.724788269920585e-05,
+          "last": 5.724788269920585e-05
+        },
+        "val/best/mae": {
+          "max": 0.4060519435008367,
+          "min": 0.14342708865801493,
+          "last": 0.14342708865801493
+        },
+        "val/best/L1": {
+          "max": 0.015829004682600498,
+          "min": 0.005546774786586563,
+          "last": 0.005546774786586563
+        },
+        "val/last improve/mse": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/L2^2": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/mae": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/L1": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "train/current/time": {
+          "max": 943.3844690322876,
+          "min": 941.1335062980652,
+          "last": 941.868047952652
+        },
+        "train/current/steps": {
+          "max": 2000,
+          "min": 2000,
+          "last": 2000
+        },
+        "train/current/overall time": {
+          "max": 14135.003518104553,
+          "min": 942.6507363319397,
+          "last": 14135.003518104553
+        },
+        "train/current/overall steps": {
+          "max": 30000.0,
+          "min": 2000.0,
+          "last": 30000.0
+        },
+        "train/current/mse": {
+          "max": 1012.0006064758301,
+          "min": 1005.7819519958496,
+          "last": 1006.6050293273926
+        },
+        "train/current/L2^2": {
+          "max": 6.253959102630615,
+          "min": 6.188552237927913,
+          "last": 6.249945039272308
+        },
+        "train/current/mae": {
+          "max": 20.727380416870115,
+          "min": 20.695673449516296,
+          "last": 20.70045409488678
+        },
+        "train/current/L1": {
+          "max": 1.5254602546095848,
+          "min": 1.5171546883881093,
+          "last": 1.525126910150051
+        },
+        "train/current/L2": {
+          "max": 2.5007916951698745,
+          "min": 2.487680091556773,
+          "last": 2.499989007830296
+        },
+        "train/best/mse": {
+          "max": 1012.0006064758301,
+          "min": 1005.7819519958496,
+          "last": 1005.7819519958496
+        },
+        "train/best/L2^2": {
+          "max": 6.188552237927913,
+          "min": 6.188552237927913,
+          "last": 6.188552237927913
+        },
+        "train/best/mae": {
+          "max": 20.727380416870115,
+          "min": 20.695673449516296,
+          "last": 20.695673449516296
+        },
+        "train/best/L1": {
+          "max": 1.5171546883881093,
+          "min": 1.5171546883881093,
+          "last": 1.5171546883881093
+        },
+        "train/last improve/mse": {
+          "max": 8,
+          "min": 0,
+          "last": 8
+        },
+        "train/last improve/L2^2": {
+          "max": 14,
+          "min": 0,
+          "last": 14
+        },
+        "train/last improve/mae": {
+          "max": 8,
+          "min": 0,
+          "last": 8
+        },
+        "train/last improve/L1": {
+          "max": 14,
+          "min": 0,
+          "last": 14
+        },
+        "initial_stats/val_initial/time": {
+          "max": 31.04204249382019,
+          "min": 31.04204249382019,
+          "last": 31.04204249382019
+        },
+        "initial_stats/val_initial/steps": {
+          "max": 150,
+          "min": 150,
+          "last": 150
+        },
+        "initial_stats/val_initial/overall time": {
+          "max": 31.04204249382019,
+          "min": 31.04204249382019,
+          "last": 31.04204249382019
+        },
+        "initial_stats/val_initial/overall steps": {
+          "max": 150.0,
+          "min": 150.0,
+          "last": 150.0
+        },
+        "initial_stats/val_initial/mse": {
+          "max": 853.6614286295572,
+          "min": 853.6614286295572,
+          "last": 853.6614286295572
+        },
+        "initial_stats/val_initial/L2^2": {
+          "max": 0.9195789436499278,
+          "min": 0.9195789436499278,
+          "last": 0.9195789436499278
+        },
+        "initial_stats/val_initial/mae": {
+          "max": 27.476702054341633,
+          "min": 27.476702054341633,
+          "last": 27.476702054341633
+        },
+        "initial_stats/val_initial/L1": {
+          "max": 0.958760358095169,
+          "min": 0.958760358095169,
+          "last": 0.958760358095169
+        },
+        "initial_stats/val_initial/L2": {
+          "max": 0.9589467887479095,
+          "min": 0.9589467887479095,
+          "last": 0.9589467887479095
+        }
+      },
+      "export_formats": [],
+      "status": "TERMINATED",
+      "start_time": 1591100903.2366958,
+      "logdir": "/workspace/package/exp/avg_heat_paraboloid_2020_06_02_12_28_23/Trainer/Trainer_0_seed=0_2020-06-02_12-28-239k2ddowz",
+      "runner": null,
+      "result_logger": null,
+      "last_debug": 1591115453.7016578,
+      "error_file": null,
+      "error_msg": null,
+      "custom_trial_name": null,
+      "saving_to": null,
+      "remote_checkpoint_dir_prefix": null,
+      "checkpoint_freq": 0,
+      "checkpoint_at_end": true,
+      "sync_on_checkpoint": true,
+      "checkpoint_manager": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "80049578080000000000008c1b7261792e74756e652e636865636b706f696e745f6d616e61676572948c11436865636b706f696e744d616e616765729493942981947d94288c146b6565705f636865636b706f696e74735f6e756d94477ff00000000000008c165f636865636b706f696e745f73636f72655f6465736394898c165f636865636b706f696e745f73636f72655f61747472948c12747261696e696e675f697465726174696f6e948c1c6e65776573745f70657273697374656e745f636865636b706f696e749468008c0a436865636b706f696e749493942981947d94288c0773746f72616765948c0a70657273697374656e74948c0576616c7565948c8b2f776f726b73706163652f7061636b6167652f6578702f6176675f686561745f70617261626f6c6f69645f323032305f30365f30325f31325f32385f32332f547261696e65722f547261696e65725f305f736565643d305f323032302d30362d30325f31322d32382d3233396b3264646f777a2f636865636b706f696e745f31352f6d6f64656c2e707468948c06726573756c74947d94288c0376616c947d94288c0763757272656e74947d94288c0474696d6594474039510a4c0000008c057374657073944b968c0c6f766572616c6c2074696d6594474079bf32f80000008c0d6f766572616c6c207374657073944740a2c000000000008c036d736594473fa200167eb851ec8c044c325e3294473f0e03ae458bf2598c036d616594473fc25bd19f92c5f98c024c3194473f76b83704e81b4f8c024c3294473f7efdc538a8ce72758c0462657374947d94288c036d736594473fa200167eb851ec8c044c325e3294473f0e03ae458bf2598c036d616594473fc25bd19f92c5f98c024c3194473f76b83704e81b4f758c0c6c61737420696d70726f7665947d94288c036d7365944b008c044c325e32944b008c036d6165944b008c024c31944b0075758c05747261696e947d94288c0763757272656e74947d94288c0474696d659447408d6ef1c32000008c057374657073944dd0078c0c6f766572616c6c2074696d65944740cb9b80734800008c0d6f766572616c6c207374657073944740dd4c00000000008c036d73659447408f74d7199db22d8c044c325e3294474018fff197a5e3548c036d616594474034b350f5a5e3548c024c3194473ff866eb799581068c024c3294474003fffa3ca7ecc5758c0462657374947d94288c036d73659447408f6e41700c49ba8c044c325e3294474018c113d67df3b68c036d616594474034b217a7ba5e358c024c3194473ff84643fe99999a758c0c6c61737420696d70726f7665947d94288c036d7365944b088c044c325e32944b0e8c036d6165944b088c024c31944b0e75758c0d696e697469616c5f7374617473947d94288c06706172616d73944abc5324008c0b76616c5f696e697469616c947d94288c0474696d659447403f0ac34c0000008c057374657073944b968c0c6f766572616c6c2074696d659447403f0ac34c0000008c0d6f766572616c6c20737465707394474062c000000000008c036d73659447408aad4a9b17e4b18c044c325e3294473fed6d30d22222228c036d61659447403b7a09255555558c024c3194473feeae2a33d70a3d8c024c3294473feeafb12d08d90675758c096c725f67726f757073945d9428473ebb7cdfd9d7bdbf473ebb7cdfd9d7bdbf473ebb7cdfd9d7bdbf473ebb7cdfd9d7bdbf658c0469746572944b0e8c04646f6e6594888c0f74696d6573746570735f746f74616c944e8c0e657069736f6465735f746f74616c944e8c12747261696e696e675f697465726174696f6e944b0f8c0d6578706572696d656e745f6964948c203263636132613563653534303431626361633563623533303738306564383036948c0464617465948c13323032302d30362d30325f31362d33302d3533948c0974696d657374616d70944abd7ed65e8c1074696d655f746869735f697465725f739447408e398ba74000008c0c74696d655f746f74616c5f73944740cc5a05cac800008c03706964944dad298c08686f73746e616d65948c0c346264623265336137363332948c076e6f64655f6970948c0c3139322e3136382e39392e32948c06636f6e666967947d94288c0467707573944b028c046d6f6465948c136176675f686561745f70617261626f6c6f6964948c0473656564944b008c0a636865636b706f696e7494888c03706465948c0f686561745f70617261626f6c6f6964948c036e6574948c0e6d756c74696c6576656c5f6e6574948c0a6e6f726d5f6c61796572948c0962617463686e6f726d948c036f7074948c056164616d77948c026273944a000002008c026c7294473f50624dd2f1a9fc8c066d696e5f6c7294473e45798ee2308c3a8c05646563617994473fd999999999999a8c0e64656361795f70617469656e6365944b028c08756e667265657a65948c03616c6c948c11756e667265657a655f70617469656e6365944b018c066c6576656c73944b048c06666163746f72944b048c0c6e5f697465726174696f6e73944b0f8c0f6e5f747261696e5f62617463686573944dd0078c0e6e5f746573745f62617463686573944b96758c1274696d655f73696e63655f726573746f7265944740cc5a05cac800008c1774696d6573746570735f73696e63655f726573746f7265944b008c18697465726174696f6e735f73696e63655f726573746f7265944b0f8c08747269616c5f6964948c053030303030948c0e6578706572696d656e745f746167948c08305f736565643d30947575628c186e65776573745f6d656d6f72795f636865636b706f696e7494680b2981947d9428680e8c066d656d6f72799468104e68127d9475628c115f626573745f636865636b706f696e7473945d9468008c0951756575654974656d9493942981947d94288c087072696f72697479944b0f6810680c7562618c0b5f6d656d62657273686970948f9428680c9075622e"
+      },
+      "restore_path": null,
+      "restoring_from": null,
+      "num_failures": 0,
+      "results": "80044e2e",
+      "best_result": "80044e2e",
+      "param_config": "80044e2e",
+      "extra_arg": "80044e2e",
+      "_nonjson_fields": [
+        "loggers",
+        "sync_to_driver_fn",
+        "results",
+        "best_result",
+        "param_config",
+        "extra_arg"
+      ],
+      "resuming_from": null,
+      "__logger_started__": false
+    },
+    {
+      "trainable_name": "Trainer",
+      "trial_id": "00001",
+      "config": {
+        "gpus": 2,
+        "mode": "avg_heat_paraboloid",
+        "seed": 1,
+        "checkpoint": true,
+        "pde": "heat_paraboloid",
+        "net": "multilevel_net",
+        "norm_layer": "batchnorm",
+        "opt": "adamw",
+        "bs": 131072,
+        "lr": 0.001,
+        "min_lr": 1e-08,
+        "decay": 0.4,
+        "decay_patience": 2,
+        "unfreeze": "all",
+        "unfreeze_patience": 1,
+        "levels": 4,
+        "factor": 4,
+        "n_iterations": 15,
+        "n_train_batches": 2000,
+        "n_test_batches": 150
+      },
+      "local_dir": "/workspace/package/exp/avg_heat_paraboloid_2020_06_02_12_28_23/Trainer",
+      "evaluated_params": {
+        "seed": 1
+      },
+      "experiment_tag": "1_seed=1",
+      "location": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "8004954a000000000000008c0e7261792e74756e652e747269616c948c084c6f636174696f6e9493942981947d94288c08686f73746e616d65948c0c3139322e3136382e39392e32948c03706964944dd12975622e"
+      },
+      "resources": {
+        "cpu": 1,
+        "gpu": 2,
+        "memory": 0,
+        "object_store_memory": 0,
+        "extra_cpu": 0,
+        "extra_gpu": 0,
+        "extra_memory": 0,
+        "extra_object_store_memory": 0,
+        "custom_resources": {},
+        "extra_custom_resources": {}
+      },
+      "stopping_criterion": {
+        "training_iteration": 15
+      },
+      "loggers": "80044e2e",
+      "sync_to_driver_fn": "80044e2e",
+      "verbose": true,
+      "max_failures": 0,
+      "last_result": {
+        "val": {
+          "current": {
+            "time": 24.254170179367065,
+            "steps": 150,
+            "overall time": 409.82890129089355,
+            "overall steps": 2400.0,
+            "mse": 0.034021529778838155,
+            "L2^2": 5.5739234691524565e-05,
+            "mae": 0.1412597516179085,
+            "L1": 0.005469886170079311,
+            "L2": 0.007465871328353079
+          },
+          "best": {
+            "mse": 0.034021529778838155,
+            "L2^2": 5.5739234691524565e-05,
+            "mae": 0.1412597516179085,
+            "L1": 0.005469886170079311
+          },
+          "last improve": {
+            "mse": 0,
+            "L2^2": 0,
+            "mae": 0,
+            "L1": 0
+          }
+        },
+        "train": {
+          "current": {
+            "time": 959.0874786376953,
+            "steps": 2000,
+            "overall time": 14412.134013652802,
+            "overall steps": 30000.0,
+            "mse": 1006.3821191711426,
+            "L2^2": 6.2474639685153965,
+            "mae": 20.69948961353302,
+            "L1": 1.524973867535591,
+            "L2": 2.4994927422409923
+          },
+          "best": {
+            "mse": 1005.6941929016114,
+            "L2^2": 6.185640799403191,
+            "mae": 20.695603210449217,
+            "L1": 1.516873871743679
+          },
+          "last improve": {
+            "mse": 10,
+            "L2^2": 14,
+            "mae": 10,
+            "L1": 14
+          }
+        },
+        "initial_stats": {
+          "params": 2380732,
+          "val_initial": {
+            "time": 30.15458631515503,
+            "steps": 150,
+            "overall time": 30.15458631515503,
+            "overall steps": 150.0,
+            "mse": 852.7309138997396,
+            "L2^2": 0.9186564195156097,
+            "mae": 27.463313268025715,
+            "L1": 0.9582724674542745,
+            "L2": 0.9584656590173743
+          }
+        },
+        "lr_groups": [
+          1.638400000000001e-06,
+          1.638400000000001e-06,
+          1.638400000000001e-06,
+          1.638400000000001e-06
+        ],
+        "iter": 14,
+        "done": true,
+        "timesteps_total": null,
+        "episodes_total": null,
+        "training_iteration": 15,
+        "experiment_id": "7c9ee36135654c92a17a408a1ed4c29c",
+        "date": "2020-06-02_16-35-29",
+        "timestamp": 1591115729,
+        "time_this_iter_s": 983.3509922027588,
+        "time_total_s": 14791.94276189804,
+        "pid": 10705,
+        "hostname": "4bdb2e3a7632",
+        "node_ip": "192.168.99.2",
+        "config": {
+          "gpus": 2,
+          "mode": "avg_heat_paraboloid",
+          "seed": 1,
+          "checkpoint": true,
+          "pde": "heat_paraboloid",
+          "net": "multilevel_net",
+          "norm_layer": "batchnorm",
+          "opt": "adamw",
+          "bs": 131072,
+          "lr": 0.001,
+          "min_lr": 1e-08,
+          "decay": 0.4,
+          "decay_patience": 2,
+          "unfreeze": "all",
+          "unfreeze_patience": 1,
+          "levels": 4,
+          "factor": 4,
+          "n_iterations": 15,
+          "n_train_batches": 2000,
+          "n_test_batches": 150
+        },
+        "time_since_restore": 14791.94276189804,
+        "timesteps_since_restore": 0,
+        "iterations_since_restore": 15,
+        "trial_id": "00001",
+        "experiment_tag": "1_seed=1"
+      },
+      "last_update_time": 1591115729.2378745,
+      "metric_analysis": {
+        "iter": {
+          "max": 14,
+          "min": 0,
+          "last": 14
+        },
+        "done": {
+          "max": true,
+          "min": false,
+          "last": true
+        },
+        "training_iteration": {
+          "max": 15,
+          "min": 1,
+          "last": 15
+        },
+        "timestamp": {
+          "max": 1591115729,
+          "min": 1591101922,
+          "last": 1591115729
+        },
+        "time_this_iter_s": {
+          "max": 987.2961518764496,
+          "min": 983.3509922027588,
+          "last": 983.3509922027588
+        },
+        "time_total_s": {
+          "max": 14791.94276189804,
+          "min": 985.5161736011505,
+          "last": 14791.94276189804
+        },
+        "pid": {
+          "max": 10705,
+          "min": 10705,
+          "last": 10705
+        },
+        "time_since_restore": {
+          "max": 14791.94276189804,
+          "min": 985.5161736011505,
+          "last": 14791.94276189804
+        },
+        "timesteps_since_restore": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "iterations_since_restore": {
+          "max": 15,
+          "min": 1,
+          "last": 15
+        },
+        "initial_stats/params": {
+          "max": 2380732,
+          "min": 2380732,
+          "last": 2380732
+        },
+        "config/gpus": {
+          "max": 2,
+          "min": 2,
+          "last": 2
+        },
+        "config/seed": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "config/checkpoint": {
+          "max": true,
+          "min": true,
+          "last": true
+        },
+        "config/bs": {
+          "max": 131072,
+          "min": 131072,
+          "last": 131072
+        },
+        "config/lr": {
+          "max": 0.001,
+          "min": 0.001,
+          "last": 0.001
+        },
+        "config/min_lr": {
+          "max": 1e-08,
+          "min": 1e-08,
+          "last": 1e-08
+        },
+        "config/decay": {
+          "max": 0.4,
+          "min": 0.4,
+          "last": 0.4
+        },
+        "config/decay_patience": {
+          "max": 2,
+          "min": 2,
+          "last": 2
+        },
+        "config/unfreeze_patience": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "config/levels": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/factor": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/n_iterations": {
+          "max": 15,
+          "min": 15,
+          "last": 15
+        },
+        "config/n_train_batches": {
+          "max": 2000,
+          "min": 2000,
+          "last": 2000
+        },
+        "config/n_test_batches": {
+          "max": 150,
+          "min": 150,
+          "last": 150
+        },
+        "val/current/time": {
+          "max": 25.820257425308228,
+          "min": 24.254170179367065,
+          "last": 24.254170179367065
+        },
+        "val/current/steps": {
+          "max": 150,
+          "min": 150,
+          "last": 150
+        },
+        "val/current/overall time": {
+          "max": 409.82890129089355,
+          "min": 55.15677762031555,
+          "last": 409.82890129089355
+        },
+        "val/current/overall steps": {
+          "max": 2400.0,
+          "min": 300.0,
+          "last": 2400.0
+        },
+        "val/current/mse": {
+          "max": 0.2854763352870941,
+          "min": 0.034021529778838155,
+          "last": 0.034021529778838155
+        },
+        "val/current/L2^2": {
+          "max": 0.0005382087205847105,
+          "min": 5.5739234691524565e-05,
+          "last": 5.5739234691524565e-05
+        },
+        "val/current/mae": {
+          "max": 0.42533811231454216,
+          "min": 0.1412597516179085,
+          "last": 0.1412597516179085
+        },
+        "val/current/L1": {
+          "max": 0.017043457937737306,
+          "min": 0.005469886170079311,
+          "last": 0.005469886170079311
+        },
+        "val/current/L2": {
+          "max": 0.02319932586487613,
+          "min": 0.007465871328353079,
+          "last": 0.007465871328353079
+        },
+        "val/best/mse": {
+          "max": 0.2854763352870941,
+          "min": 0.034021529778838155,
+          "last": 0.034021529778838155
+        },
+        "val/best/L2^2": {
+          "max": 0.0005382087205847105,
+          "min": 5.5739234691524565e-05,
+          "last": 5.5739234691524565e-05
+        },
+        "val/best/mae": {
+          "max": 0.42533811231454216,
+          "min": 0.1412597516179085,
+          "last": 0.1412597516179085
+        },
+        "val/best/L1": {
+          "max": 0.017043457937737306,
+          "min": 0.005469886170079311,
+          "last": 0.005469886170079311
+        },
+        "val/last improve/mse": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/L2^2": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/mae": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/L1": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "train/current/time": {
+          "max": 961.7200956344604,
+          "min": 959.0874786376953,
+          "last": 959.0874786376953
+        },
+        "train/current/steps": {
+          "max": 2000,
+          "min": 2000,
+          "last": 2000
+        },
+        "train/current/overall time": {
+          "max": 14412.134013652802,
+          "min": 960.5035519599915,
+          "last": 14412.134013652802
+        },
+        "train/current/overall steps": {
+          "max": 30000.0,
+          "min": 2000.0,
+          "last": 30000.0
+        },
+        "train/current/mse": {
+          "max": 1011.2106748962402,
+          "min": 1005.6941929016114,
+          "last": 1006.3821191711426
+        },
+        "train/current/L2^2": {
+          "max": 6.2566900188922885,
+          "min": 6.185640799403191,
+          "last": 6.2474639685153965
+        },
+        "train/current/mae": {
+          "max": 20.720173345565797,
+          "min": 20.695603210449217,
+          "last": 20.69948961353302
+        },
+        "train/current/L1": {
+          "max": 1.5257388582229614,
+          "min": 1.516873871743679,
+          "last": 1.524973867535591
+        },
+        "train/current/L2": {
+          "max": 2.5013376459191368,
+          "min": 2.487094851308086,
+          "last": 2.4994927422409923
+        },
+        "train/best/mse": {
+          "max": 1011.2106748962402,
+          "min": 1005.6941929016114,
+          "last": 1005.6941929016114
+        },
+        "train/best/L2^2": {
+          "max": 6.185640799403191,
+          "min": 6.185640799403191,
+          "last": 6.185640799403191
+        },
+        "train/best/mae": {
+          "max": 20.720173345565797,
+          "min": 20.695603210449217,
+          "last": 20.695603210449217
+        },
+        "train/best/L1": {
+          "max": 1.516873871743679,
+          "min": 1.516873871743679,
+          "last": 1.516873871743679
+        },
+        "train/last improve/mse": {
+          "max": 10,
+          "min": 0,
+          "last": 10
+        },
+        "train/last improve/L2^2": {
+          "max": 14,
+          "min": 0,
+          "last": 14
+        },
+        "train/last improve/mae": {
+          "max": 10,
+          "min": 0,
+          "last": 10
+        },
+        "train/last improve/L1": {
+          "max": 14,
+          "min": 0,
+          "last": 14
+        },
+        "initial_stats/val_initial/time": {
+          "max": 30.15458631515503,
+          "min": 30.15458631515503,
+          "last": 30.15458631515503
+        },
+        "initial_stats/val_initial/steps": {
+          "max": 150,
+          "min": 150,
+          "last": 150
+        },
+        "initial_stats/val_initial/overall time": {
+          "max": 30.15458631515503,
+          "min": 30.15458631515503,
+          "last": 30.15458631515503
+        },
+        "initial_stats/val_initial/overall steps": {
+          "max": 150.0,
+          "min": 150.0,
+          "last": 150.0
+        },
+        "initial_stats/val_initial/mse": {
+          "max": 852.7309138997396,
+          "min": 852.7309138997396,
+          "last": 852.7309138997396
+        },
+        "initial_stats/val_initial/L2^2": {
+          "max": 0.9186564195156097,
+          "min": 0.9186564195156097,
+          "last": 0.9186564195156097
+        },
+        "initial_stats/val_initial/mae": {
+          "max": 27.463313268025715,
+          "min": 27.463313268025715,
+          "last": 27.463313268025715
+        },
+        "initial_stats/val_initial/L1": {
+          "max": 0.9582724674542745,
+          "min": 0.9582724674542745,
+          "last": 0.9582724674542745
+        },
+        "initial_stats/val_initial/L2": {
+          "max": 0.9584656590173743,
+          "min": 0.9584656590173743,
+          "last": 0.9584656590173743
+        }
+      },
+      "export_formats": [],
+      "status": "TERMINATED",
+      "start_time": 1591100903.4497695,
+      "logdir": "/workspace/package/exp/avg_heat_paraboloid_2020_06_02_12_28_23/Trainer/Trainer_1_seed=1_2020-06-02_12-28-23u72krjkg",
+      "runner": null,
+      "result_logger": null,
+      "last_debug": 1591115729.2378402,
+      "error_file": null,
+      "error_msg": null,
+      "custom_trial_name": null,
+      "saving_to": null,
+      "remote_checkpoint_dir_prefix": null,
+      "checkpoint_freq": 0,
+      "checkpoint_at_end": true,
+      "sync_on_checkpoint": true,
+      "checkpoint_manager": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "80049578080000000000008c1b7261792e74756e652e636865636b706f696e745f6d616e61676572948c11436865636b706f696e744d616e616765729493942981947d94288c146b6565705f636865636b706f696e74735f6e756d94477ff00000000000008c165f636865636b706f696e745f73636f72655f6465736394898c165f636865636b706f696e745f73636f72655f61747472948c12747261696e696e675f697465726174696f6e948c1c6e65776573745f70657273697374656e745f636865636b706f696e749468008c0a436865636b706f696e749493942981947d94288c0773746f72616765948c0a70657273697374656e74948c0576616c7565948c8b2f776f726b73706163652f7061636b6167652f6578702f6176675f686561745f70617261626f6c6f69645f323032305f30365f30325f31325f32385f32332f547261696e65722f547261696e65725f315f736565643d315f323032302d30362d30325f31322d32382d32337537326b726a6b672f636865636b706f696e745f31352f6d6f64656c2e707468948c06726573756c74947d94288c0376616c947d94288c0763757272656e74947d94288c0474696d659447403841114c0000008c057374657073944b968c0c6f766572616c6c2074696d65944740799d432e0000008c0d6f766572616c6c207374657073944740a2c000000000008c036d736594473fa16b451b851eb88c044c325e3294473f0d3931855555558c036d616594473fc214ccaeb851ec8c024c3194473f7667976369d0378c024c3294473f7e948893100eff758c0462657374947d94288c036d736594473fa16b451b851eb88c044c325e3294473f0d3931855555558c036d616594473fc214ccaeb851ec8c024c3194473f7667976369d037758c0c6c61737420696d70726f7665947d94288c036d7365944b008c044c325e32944b008c036d6165944b008c024c31944b0075758c05747261696e947d94288c0763757272656e74947d94288c0474696d659447408df8b3280000008c057374657073944dd0078c0c6f766572616c6c2074696d65944740cc2611275c00008c0d6f766572616c6c207374657073944740dd4c00000000008c036d73659447408f730e947ef9db8c044c325e3294474018fd6731ced9178c036d616594474034b311c05604198c024c3194473ff8664aff851eb88c024c3294474003fef60d041d88758c0462657374947d94288c036d73659447408f6d8db5020c4a8c044c325e3294474018be189f28f5c38c036d616594474034b2130d4fdf3b8c024c3194473ff8451d8974bc6a758c0c6c61737420696d70726f7665947d94288c036d7365944b0a8c044c325e32944b0e8c036d6165944b0a8c024c31944b0e75758c0d696e697469616c5f7374617473947d94288c06706172616d73944abc5324008c0b76616c5f696e697469616c947d94288c0474696d659447403e2792f80000008c057374657073944b968c0c6f766572616c6c2074696d659447403e2792f80000008c0d6f766572616c6c20737465707394474062c000000000008c036d73659447408aa5d8e962fc968c044c325e3294473fed65a225c28f5c8c036d61659447403b769bb2c5f92c8c024c3194473feeaa2b058bf2598c024c3294473feeabc02c7a32e075758c096c725f67726f757073945d9428473ebb7cdfd9d7bdbf473ebb7cdfd9d7bdbf473ebb7cdfd9d7bdbf473ebb7cdfd9d7bdbf658c0469746572944b0e8c04646f6e6594888c0f74696d6573746570735f746f74616c944e8c0e657069736f6465735f746f74616c944e8c12747261696e696e675f697465726174696f6e944b0f8c0d6578706572696d656e745f6964948c203763396565333631333536353463393261313761343038613165643463323963948c0464617465948c13323032302d30362d30325f31362d33352d3239948c0974696d657374616d70944ad17fd65e8c1074696d655f746869735f697465725f739447408ebaced50000008c0c74696d655f746f74616c5f73944740cce3f8ac6c00008c03706964944dd1298c08686f73746e616d65948c0c346264623265336137363332948c076e6f64655f6970948c0c3139322e3136382e39392e32948c06636f6e666967947d94288c0467707573944b028c046d6f6465948c136176675f686561745f70617261626f6c6f6964948c0473656564944b018c0a636865636b706f696e7494888c03706465948c0f686561745f70617261626f6c6f6964948c036e6574948c0e6d756c74696c6576656c5f6e6574948c0a6e6f726d5f6c61796572948c0962617463686e6f726d948c036f7074948c056164616d77948c026273944a000002008c026c7294473f50624dd2f1a9fc8c066d696e5f6c7294473e45798ee2308c3a8c05646563617994473fd999999999999a8c0e64656361795f70617469656e6365944b028c08756e667265657a65948c03616c6c948c11756e667265657a655f70617469656e6365944b018c066c6576656c73944b048c06666163746f72944b048c0c6e5f697465726174696f6e73944b0f8c0f6e5f747261696e5f62617463686573944dd0078c0e6e5f746573745f62617463686573944b96758c1274696d655f73696e63655f726573746f7265944740cce3f8ac6c00008c1774696d6573746570735f73696e63655f726573746f7265944b008c18697465726174696f6e735f73696e63655f726573746f7265944b0f8c08747269616c5f6964948c053030303031948c0e6578706572696d656e745f746167948c08315f736565643d31947575628c186e65776573745f6d656d6f72795f636865636b706f696e7494680b2981947d9428680e8c066d656d6f72799468104e68127d9475628c115f626573745f636865636b706f696e7473945d9468008c0951756575654974656d9493942981947d94288c087072696f72697479944b0f6810680c7562618c0b5f6d656d62657273686970948f9428680c9075622e"
+      },
+      "restore_path": null,
+      "restoring_from": null,
+      "num_failures": 0,
+      "results": "80044e2e",
+      "best_result": "80044e2e",
+      "param_config": "80044e2e",
+      "extra_arg": "80044e2e",
+      "_nonjson_fields": [
+        "loggers",
+        "sync_to_driver_fn",
+        "results",
+        "best_result",
+        "param_config",
+        "extra_arg"
+      ],
+      "resuming_from": null,
+      "__logger_started__": false
+    },
+    {
+      "trainable_name": "Trainer",
+      "trial_id": "00002",
+      "config": {
+        "gpus": 2,
+        "mode": "avg_heat_paraboloid",
+        "seed": 2,
+        "checkpoint": true,
+        "pde": "heat_paraboloid",
+        "net": "multilevel_net",
+        "norm_layer": "batchnorm",
+        "opt": "adamw",
+        "bs": 131072,
+        "lr": 0.001,
+        "min_lr": 1e-08,
+        "decay": 0.4,
+        "decay_patience": 2,
+        "unfreeze": "all",
+        "unfreeze_patience": 1,
+        "levels": 4,
+        "factor": 4,
+        "n_iterations": 15,
+        "n_train_batches": 2000,
+        "n_test_batches": 150
+      },
+      "local_dir": "/workspace/package/exp/avg_heat_paraboloid_2020_06_02_12_28_23/Trainer",
+      "evaluated_params": {
+        "seed": 2
+      },
+      "experiment_tag": "2_seed=2",
+      "location": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "8004954a000000000000008c0e7261792e74756e652e747269616c948c084c6f636174696f6e9493942981947d94288c08686f73746e616d65948c0c3139322e3136382e39392e32948c03706964944db32975622e"
+      },
+      "resources": {
+        "cpu": 1,
+        "gpu": 2,
+        "memory": 0,
+        "object_store_memory": 0,
+        "extra_cpu": 0,
+        "extra_gpu": 0,
+        "extra_memory": 0,
+        "extra_object_store_memory": 0,
+        "custom_resources": {},
+        "extra_custom_resources": {}
+      },
+      "stopping_criterion": {
+        "training_iteration": 15
+      },
+      "loggers": "80044e2e",
+      "sync_to_driver_fn": "80044e2e",
+      "verbose": true,
+      "max_failures": 0,
+      "last_result": {
+        "val": {
+          "current": {
+            "time": 24.762218952178955,
+            "steps": 150,
+            "overall time": 405.1727297306061,
+            "overall steps": 2400.0,
+            "mse": 0.035382344797253606,
+            "L2^2": 5.7404872568440626e-05,
+            "mae": 0.14421464155117672,
+            "L1": 0.005574982259422541,
+            "L2": 0.0075766003305203205
+          },
+          "best": {
+            "mse": 0.035270312229792274,
+            "L2^2": 5.709262213107043e-05,
+            "mae": 0.1437439117829005,
+            "L1": 0.005552070693423351
+          },
+          "last improve": {
+            "mse": 1,
+            "L2^2": 1,
+            "mae": 1,
+            "L1": 1
+          }
+        },
+        "train": {
+          "current": {
+            "time": 944.2763767242432,
+            "steps": 2000,
+            "overall time": 14180.25038075447,
+            "overall steps": 30000.0,
+            "mse": 1006.0973378601075,
+            "L2^2": 6.249456663608551,
+            "mae": 20.698253491401672,
+            "L1": 1.525186313033104,
+            "L2": 2.499891330359892
+          },
+          "best": {
+            "mse": 1005.7078241577149,
+            "L2^2": 6.18226951533556,
+            "mae": 20.695781984329223,
+            "L1": 1.5164900844395162
+          },
+          "last improve": {
+            "mse": 9,
+            "L2^2": 14,
+            "mae": 9,
+            "L1": 14
+          }
+        },
+        "initial_stats": {
+          "params": 2380732,
+          "val_initial": {
+            "time": 29.92287802696228,
+            "steps": 150,
+            "overall time": 29.92287802696228,
+            "overall steps": 150.0,
+            "mse": 867.703076171875,
+            "L2^2": 0.9386644009749094,
+            "mae": 27.728346735636393,
+            "L1": 0.9687250606218973,
+            "L2": 0.9688469440396195
+          }
+        },
+        "lr_groups": [
+          1.638400000000001e-06,
+          1.638400000000001e-06,
+          1.638400000000001e-06,
+          1.638400000000001e-06
+        ],
+        "iter": 14,
+        "done": true,
+        "timesteps_total": null,
+        "episodes_total": null,
+        "training_iteration": 15,
+        "experiment_id": "31ca125210ab44dbaccf5ff33eb9c999",
+        "date": "2020-06-02_16-31-32",
+        "timestamp": 1591115492,
+        "time_this_iter_s": 969.0471227169037,
+        "time_total_s": 14555.629626274109,
+        "pid": 10675,
+        "hostname": "4bdb2e3a7632",
+        "node_ip": "192.168.99.2",
+        "config": {
+          "gpus": 2,
+          "mode": "avg_heat_paraboloid",
+          "seed": 2,
+          "checkpoint": true,
+          "pde": "heat_paraboloid",
+          "net": "multilevel_net",
+          "norm_layer": "batchnorm",
+          "opt": "adamw",
+          "bs": 131072,
+          "lr": 0.001,
+          "min_lr": 1e-08,
+          "decay": 0.4,
+          "decay_patience": 2,
+          "unfreeze": "all",
+          "unfreeze_patience": 1,
+          "levels": 4,
+          "factor": 4,
+          "n_iterations": 15,
+          "n_train_batches": 2000,
+          "n_test_batches": 150
+        },
+        "time_since_restore": 14555.629626274109,
+        "timesteps_since_restore": 0,
+        "iterations_since_restore": 15,
+        "trial_id": "00002",
+        "experiment_tag": "2_seed=2"
+      },
+      "last_update_time": 1591115492.7585325,
+      "metric_analysis": {
+        "iter": {
+          "max": 14,
+          "min": 0,
+          "last": 14
+        },
+        "done": {
+          "max": true,
+          "min": false,
+          "last": true
+        },
+        "training_iteration": {
+          "max": 15,
+          "min": 1,
+          "last": 15
+        },
+        "timestamp": {
+          "max": 1591115492,
+          "min": 1591101906,
+          "last": 1591115492
+        },
+        "time_this_iter_s": {
+          "max": 971.1014249324799,
+          "min": 969.0471227169037,
+          "last": 969.0471227169037
+        },
+        "time_total_s": {
+          "max": 14555.629626274109,
+          "min": 969.5580744743347,
+          "last": 14555.629626274109
+        },
+        "pid": {
+          "max": 10675,
+          "min": 10675,
+          "last": 10675
+        },
+        "time_since_restore": {
+          "max": 14555.629626274109,
+          "min": 969.5580744743347,
+          "last": 14555.629626274109
+        },
+        "timesteps_since_restore": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "iterations_since_restore": {
+          "max": 15,
+          "min": 1,
+          "last": 15
+        },
+        "initial_stats/params": {
+          "max": 2380732,
+          "min": 2380732,
+          "last": 2380732
+        },
+        "config/gpus": {
+          "max": 2,
+          "min": 2,
+          "last": 2
+        },
+        "config/seed": {
+          "max": 2,
+          "min": 2,
+          "last": 2
+        },
+        "config/checkpoint": {
+          "max": true,
+          "min": true,
+          "last": true
+        },
+        "config/bs": {
+          "max": 131072,
+          "min": 131072,
+          "last": 131072
+        },
+        "config/lr": {
+          "max": 0.001,
+          "min": 0.001,
+          "last": 0.001
+        },
+        "config/min_lr": {
+          "max": 1e-08,
+          "min": 1e-08,
+          "last": 1e-08
+        },
+        "config/decay": {
+          "max": 0.4,
+          "min": 0.4,
+          "last": 0.4
+        },
+        "config/decay_patience": {
+          "max": 2,
+          "min": 2,
+          "last": 2
+        },
+        "config/unfreeze_patience": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "config/levels": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/factor": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/n_iterations": {
+          "max": 15,
+          "min": 15,
+          "last": 15
+        },
+        "config/n_train_batches": {
+          "max": 2000,
+          "min": 2000,
+          "last": 2000
+        },
+        "config/n_test_batches": {
+          "max": 150,
+          "min": 150,
+          "last": 150
+        },
+        "val/current/time": {
+          "max": 25.637460231781006,
+          "min": 24.52920389175415,
+          "last": 24.762218952178955
+        },
+        "val/current/steps": {
+          "max": 150,
+          "min": 150,
+          "last": 150
+        },
+        "val/current/overall time": {
+          "max": 405.1727297306061,
+          "min": 54.876227140426636,
+          "last": 405.1727297306061
+        },
+        "val/current/overall steps": {
+          "max": 2400.0,
+          "min": 300.0,
+          "last": 2400.0
+        },
+        "val/current/mse": {
+          "max": 0.354888808131218,
+          "min": 0.035270312229792274,
+          "last": 0.035382344797253606
+        },
+        "val/current/L2^2": {
+          "max": 0.0006598408178736766,
+          "min": 5.709262213107043e-05,
+          "last": 5.7404872568440626e-05
+        },
+        "val/current/mae": {
+          "max": 0.472420325477918,
+          "min": 0.1437439117829005,
+          "last": 0.14421464155117672
+        },
+        "val/current/L1": {
+          "max": 0.018846349492669105,
+          "min": 0.005552070693423351,
+          "last": 0.005574982259422541
+        },
+        "val/current/L2": {
+          "max": 0.02568736689257341,
+          "min": 0.00755596599589162,
+          "last": 0.0075766003305203205
+        },
+        "val/best/mse": {
+          "max": 0.354888808131218,
+          "min": 0.035270312229792274,
+          "last": 0.035270312229792274
+        },
+        "val/best/L2^2": {
+          "max": 0.0006598408178736766,
+          "min": 5.709262213107043e-05,
+          "last": 5.709262213107043e-05
+        },
+        "val/best/mae": {
+          "max": 0.472420325477918,
+          "min": 0.1437439117829005,
+          "last": 0.1437439117829005
+        },
+        "val/best/L1": {
+          "max": 0.018846349492669105,
+          "min": 0.005552070693423351,
+          "last": 0.005552070693423351
+        },
+        "val/last improve/mse": {
+          "max": 1,
+          "min": 0,
+          "last": 1
+        },
+        "val/last improve/L2^2": {
+          "max": 1,
+          "min": 0,
+          "last": 1
+        },
+        "val/last improve/mae": {
+          "max": 1,
+          "min": 0,
+          "last": 1
+        },
+        "val/last improve/L1": {
+          "max": 1,
+          "min": 0,
+          "last": 1
+        },
+        "train/current/time": {
+          "max": 946.1109113693237,
+          "min": 944.2763767242432,
+          "last": 944.2763767242432
+        },
+        "train/current/steps": {
+          "max": 2000,
+          "min": 2000,
+          "last": 2000
+        },
+        "train/current/overall time": {
+          "max": 14180.25038075447,
+          "min": 944.5968518257141,
+          "last": 14180.25038075447
+        },
+        "train/current/overall steps": {
+          "max": 30000.0,
+          "min": 2000.0,
+          "last": 30000.0
+        },
+        "train/current/mse": {
+          "max": 1011.8974181518555,
+          "min": 1005.7078241577149,
+          "last": 1006.0973378601075
+        },
+        "train/current/L2^2": {
+          "max": 6.257675679445267,
+          "min": 6.18226951533556,
+          "last": 6.249456663608551
+        },
+        "train/current/mae": {
+          "max": 20.726788899421692,
+          "min": 20.695781984329223,
+          "last": 20.698253491401672
+        },
+        "train/current/L1": {
+          "max": 1.5257244600057602,
+          "min": 1.5164900844395162,
+          "last": 1.525186313033104
+        },
+        "train/current/L2": {
+          "max": 2.5015346648498133,
+          "min": 2.4864170035083735,
+          "last": 2.499891330359892
+        },
+        "train/best/mse": {
+          "max": 1011.8974181518555,
+          "min": 1005.7078241577149,
+          "last": 1005.7078241577149
+        },
+        "train/best/L2^2": {
+          "max": 6.18226951533556,
+          "min": 6.18226951533556,
+          "last": 6.18226951533556
+        },
+        "train/best/mae": {
+          "max": 20.726788899421692,
+          "min": 20.695781984329223,
+          "last": 20.695781984329223
+        },
+        "train/best/L1": {
+          "max": 1.5164900844395162,
+          "min": 1.5164900844395162,
+          "last": 1.5164900844395162
+        },
+        "train/last improve/mse": {
+          "max": 9,
+          "min": 0,
+          "last": 9
+        },
+        "train/last improve/L2^2": {
+          "max": 14,
+          "min": 0,
+          "last": 14
+        },
+        "train/last improve/mae": {
+          "max": 9,
+          "min": 0,
+          "last": 9
+        },
+        "train/last improve/L1": {
+          "max": 14,
+          "min": 0,
+          "last": 14
+        },
+        "initial_stats/val_initial/time": {
+          "max": 29.92287802696228,
+          "min": 29.92287802696228,
+          "last": 29.92287802696228
+        },
+        "initial_stats/val_initial/steps": {
+          "max": 150,
+          "min": 150,
+          "last": 150
+        },
+        "initial_stats/val_initial/overall time": {
+          "max": 29.92287802696228,
+          "min": 29.92287802696228,
+          "last": 29.92287802696228
+        },
+        "initial_stats/val_initial/overall steps": {
+          "max": 150.0,
+          "min": 150.0,
+          "last": 150.0
+        },
+        "initial_stats/val_initial/mse": {
+          "max": 867.703076171875,
+          "min": 867.703076171875,
+          "last": 867.703076171875
+        },
+        "initial_stats/val_initial/L2^2": {
+          "max": 0.9386644009749094,
+          "min": 0.9386644009749094,
+          "last": 0.9386644009749094
+        },
+        "initial_stats/val_initial/mae": {
+          "max": 27.728346735636393,
+          "min": 27.728346735636393,
+          "last": 27.728346735636393
+        },
+        "initial_stats/val_initial/L1": {
+          "max": 0.9687250606218973,
+          "min": 0.9687250606218973,
+          "last": 0.9687250606218973
+        },
+        "initial_stats/val_initial/L2": {
+          "max": 0.9688469440396195,
+          "min": 0.9688469440396195,
+          "last": 0.9688469440396195
+        }
+      },
+      "export_formats": [],
+      "status": "TERMINATED",
+      "start_time": 1591100903.5981994,
+      "logdir": "/workspace/package/exp/avg_heat_paraboloid_2020_06_02_12_28_23/Trainer/Trainer_2_seed=2_2020-06-02_12-28-2378agmyyu",
+      "runner": null,
+      "result_logger": null,
+      "last_debug": 1591115492.7584987,
+      "error_file": null,
+      "error_msg": null,
+      "custom_trial_name": null,
+      "saving_to": null,
+      "remote_checkpoint_dir_prefix": null,
+      "checkpoint_freq": 0,
+      "checkpoint_at_end": true,
+      "sync_on_checkpoint": true,
+      "checkpoint_manager": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "80049578080000000000008c1b7261792e74756e652e636865636b706f696e745f6d616e61676572948c11436865636b706f696e744d616e616765729493942981947d94288c146b6565705f636865636b706f696e74735f6e756d94477ff00000000000008c165f636865636b706f696e745f73636f72655f6465736394898c165f636865636b706f696e745f73636f72655f61747472948c12747261696e696e675f697465726174696f6e948c1c6e65776573745f70657273697374656e745f636865636b706f696e749468008c0a436865636b706f696e749493942981947d94288c0773746f72616765948c0a70657273697374656e74948c0576616c7565948c8b2f776f726b73706163652f7061636b6167652f6578702f6176675f686561745f70617261626f6c6f69645f323032305f30365f30325f31325f32385f32332f547261696e65722f547261696e65725f325f736565643d325f323032302d30362d30325f31322d32382d3233373861676d7979752f636865636b706f696e745f31352f6d6f64656c2e707468948c06726573756c74947d94288c0376616c947d94288c0763757272656e74947d94288c0474696d6594474038c320c80000008c057374657073944b968c0c6f766572616c6c2074696d659447407952c3804000008c0d6f766572616c6c207374657073944740a2c000000000008c036d736594473fa21da27b851eb88c044c325e3294473f0e18c0670a3d718c036d616594473fc275a0188888898c024c3194473f76d5cae7ae147b8c024c3294473f7f08a42a26b27e758c0462657374947d94288c036d736594473fa20ef34b17e4b18c044c325e3294473f0deed78f258bf28c036d616594473fc26633540da7418c024c3194473f76bdc4a0da740e758c0c6c61737420696d70726f7665947d94288c036d7365944b018c044c325e32944b018c036d6165944b018c024c31944b0175758c05747261696e947d94288c0763757272656e74947d94288c0474696d659447408d8236050000008c057374657073944dd0078c0c6f766572616c6c2074696d65944740cbb2200c7a00008c0d6f766572616c6c207374657073944740dd4c00000000008c036d73659447408f70c759126e988c044c325e3294474018ff71914fdf3b8c036d616594474034b2c0bda5e3548c024c3194473ff86729c36c8b448c024c3294474003ffc7069b98ec758c0462657374947d94288c036d73659447408f6da99fb645a28c044c325e3294474018baa4dc1db22d8c036d616594474034b21ec4a3d70a8c024c3194473ff8438b1b560419758c0c6c61737420696d70726f7665947d94288c036d7365944b098c044c325e32944b0e8c036d6165944b098c024c31944b0e75758c0d696e697469616c5f7374617473947d94288c06706172616d73944abc5324008c0b76616c5f696e697469616c947d94288c0474696d659447403dec41bc0000008c057374657073944b968c0c6f766572616c6c2074696d659447403dec41bc0000008c0d6f766572616c6c20737465707394474062c000000000008c036d73659447408b1d9fe66666668c044c325e3294473fee0989ed0369d08c036d61659447403bba74ee81b4e88c024c3194473feeffcbb2c5f92c8c024c3294473fef00cb4e6f59c475758c096c725f67726f757073945d9428473ebb7cdfd9d7bdbf473ebb7cdfd9d7bdbf473ebb7cdfd9d7bdbf473ebb7cdfd9d7bdbf658c0469746572944b0e8c04646f6e6594888c0f74696d6573746570735f746f74616c944e8c0e657069736f6465735f746f74616c944e8c12747261696e696e675f697465726174696f6e944b0f8c0d6578706572696d656e745f6964948c203331636131323532313061623434646261636366356666333365623963393939948c0464617465948c13323032302d30362d30325f31362d33312d3332948c0974696d657374616d70944ae47ed65e8c1074696d655f746869735f697465725f739447408e486081e000008c0c74696d655f746f74616c5f73944740cc6dd0979800008c03706964944db3298c08686f73746e616d65948c0c346264623265336137363332948c076e6f64655f6970948c0c3139322e3136382e39392e32948c06636f6e666967947d94288c0467707573944b028c046d6f6465948c136176675f686561745f70617261626f6c6f6964948c0473656564944b028c0a636865636b706f696e7494888c03706465948c0f686561745f70617261626f6c6f6964948c036e6574948c0e6d756c74696c6576656c5f6e6574948c0a6e6f726d5f6c61796572948c0962617463686e6f726d948c036f7074948c056164616d77948c026273944a000002008c026c7294473f50624dd2f1a9fc8c066d696e5f6c7294473e45798ee2308c3a8c05646563617994473fd999999999999a8c0e64656361795f70617469656e6365944b028c08756e667265657a65948c03616c6c948c11756e667265657a655f70617469656e6365944b018c066c6576656c73944b048c06666163746f72944b048c0c6e5f697465726174696f6e73944b0f8c0f6e5f747261696e5f62617463686573944dd0078c0e6e5f746573745f62617463686573944b96758c1274696d655f73696e63655f726573746f7265944740cc6dd0979800008c1774696d6573746570735f73696e63655f726573746f7265944b008c18697465726174696f6e735f73696e63655f726573746f7265944b0f8c08747269616c5f6964948c053030303032948c0e6578706572696d656e745f746167948c08325f736565643d32947575628c186e65776573745f6d656d6f72795f636865636b706f696e7494680b2981947d9428680e8c066d656d6f72799468104e68127d9475628c115f626573745f636865636b706f696e7473945d9468008c0951756575654974656d9493942981947d94288c087072696f72697479944b0f6810680c7562618c0b5f6d656d62657273686970948f9428680c9075622e"
+      },
+      "restore_path": null,
+      "restoring_from": null,
+      "num_failures": 0,
+      "results": "80044e2e",
+      "best_result": "80044e2e",
+      "param_config": "80044e2e",
+      "extra_arg": "80044e2e",
+      "_nonjson_fields": [
+        "loggers",
+        "sync_to_driver_fn",
+        "results",
+        "best_result",
+        "param_config",
+        "extra_arg"
+      ],
+      "resuming_from": null,
+      "__logger_started__": false
+    },
+    {
+      "trainable_name": "Trainer",
+      "trial_id": "00003",
+      "config": {
+        "gpus": 2,
+        "mode": "avg_heat_paraboloid",
+        "seed": 3,
+        "checkpoint": true,
+        "pde": "heat_paraboloid",
+        "net": "multilevel_net",
+        "norm_layer": "batchnorm",
+        "opt": "adamw",
+        "bs": 131072,
+        "lr": 0.001,
+        "min_lr": 1e-08,
+        "decay": 0.4,
+        "decay_patience": 2,
+        "unfreeze": "all",
+        "unfreeze_patience": 1,
+        "levels": 4,
+        "factor": 4,
+        "n_iterations": 15,
+        "n_train_batches": 2000,
+        "n_test_batches": 150
+      },
+      "local_dir": "/workspace/package/exp/avg_heat_paraboloid_2020_06_02_12_28_23/Trainer",
+      "evaluated_params": {
+        "seed": 3
+      },
+      "experiment_tag": "3_seed=3",
+      "location": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "8004954a000000000000008c0e7261792e74756e652e747269616c948c084c6f636174696f6e9493942981947d94288c08686f73746e616d65948c0c3139322e3136382e39392e32948c03706964944dc82975622e"
+      },
+      "resources": {
+        "cpu": 1,
+        "gpu": 2,
+        "memory": 0,
+        "object_store_memory": 0,
+        "extra_cpu": 0,
+        "extra_gpu": 0,
+        "extra_memory": 0,
+        "extra_object_store_memory": 0,
+        "custom_resources": {},
+        "extra_custom_resources": {}
+      },
+      "stopping_criterion": {
+        "training_iteration": 15
+      },
+      "loggers": "80044e2e",
+      "sync_to_driver_fn": "80044e2e",
+      "verbose": true,
+      "max_failures": 0,
+      "last_result": {
+        "val": {
+          "current": {
+            "time": 24.313130617141724,
+            "steps": 150,
+            "overall time": 417.46087670326233,
+            "overall steps": 2400.0,
+            "mse": 0.036007708435257274,
+            "L2^2": 5.791810823817893e-05,
+            "mae": 0.14507315268119175,
+            "L1": 0.005595092410221696,
+            "L2": 0.007610394749168989
+          },
+          "best": {
+            "mse": 0.03572769097983837,
+            "L2^2": 5.791810823817893e-05,
+            "mae": 0.1447520461678505,
+            "L1": 0.005595092410221696
+          },
+          "last improve": {
+            "mse": 1,
+            "L2^2": 0,
+            "mae": 1,
+            "L1": 0
+          }
+        },
+        "train": {
+          "current": {
+            "time": 960.121874332428,
+            "steps": 2000,
+            "overall time": 14389.801872968674,
+            "overall steps": 30000.0,
+            "mse": 1006.2821939697266,
+            "L2^2": 6.251286494970322,
+            "mae": 20.69999943828583,
+            "L1": 1.525231335759163,
+            "L2": 2.5002572857548726
+          },
+          "best": {
+            "mse": 1005.7839724121094,
+            "L2^2": 6.183699374884367,
+            "mae": 20.695045281410216,
+            "L1": 1.5165018314421177
+          },
+          "last improve": {
+            "mse": 9,
+            "L2^2": 14,
+            "mae": 3,
+            "L1": 14
+          }
+        },
+        "initial_stats": {
+          "params": 2380732,
+          "val_initial": {
+            "time": 31.898723363876343,
+            "steps": 150,
+            "overall time": 31.898723363876343,
+            "overall steps": 150.0,
+            "mse": 852.6023575846355,
+            "L2^2": 0.9177891500790913,
+            "mae": 27.45615374247233,
+            "L1": 0.9578161334991455,
+            "L2": 0.9580131262561549
+          }
+        },
+        "lr_groups": [
+          1.638400000000001e-06,
+          1.638400000000001e-06,
+          1.638400000000001e-06,
+          1.638400000000001e-06
+        ],
+        "iter": 14,
+        "done": true,
+        "timesteps_total": null,
+        "episodes_total": null,
+        "training_iteration": 15,
+        "experiment_id": "1f33896f5f4d42beae6bef74fbdc5390",
+        "date": "2020-06-02_16-35-14",
+        "timestamp": 1591115714,
+        "time_this_iter_s": 984.4439811706543,
+        "time_total_s": 14775.497477769852,
+        "pid": 10696,
+        "hostname": "4bdb2e3a7632",
+        "node_ip": "192.168.99.2",
+        "config": {
+          "gpus": 2,
+          "mode": "avg_heat_paraboloid",
+          "seed": 3,
+          "checkpoint": true,
+          "pde": "heat_paraboloid",
+          "net": "multilevel_net",
+          "norm_layer": "batchnorm",
+          "opt": "adamw",
+          "bs": 131072,
+          "lr": 0.001,
+          "min_lr": 1e-08,
+          "decay": 0.4,
+          "decay_patience": 2,
+          "unfreeze": "all",
+          "unfreeze_patience": 1,
+          "levels": 4,
+          "factor": 4,
+          "n_iterations": 15,
+          "n_train_batches": 2000,
+          "n_test_batches": 150
+        },
+        "time_since_restore": 14775.497477769852,
+        "timesteps_since_restore": 0,
+        "iterations_since_restore": 15,
+        "trial_id": "00003",
+        "experiment_tag": "3_seed=3"
+      },
+      "last_update_time": 1591115714.5175252,
+      "metric_analysis": {
+        "iter": {
+          "max": 14,
+          "min": 0,
+          "last": 14
+        },
+        "done": {
+          "max": true,
+          "min": false,
+          "last": true
+        },
+        "training_iteration": {
+          "max": 15,
+          "min": 1,
+          "last": 15
+        },
+        "timestamp": {
+          "max": 1591115714,
+          "min": 1591101924,
+          "last": 1591115714
+        },
+        "time_this_iter_s": {
+          "max": 985.5708351135254,
+          "min": 984.4439811706543,
+          "last": 984.4439811706543
+        },
+        "time_total_s": {
+          "max": 14775.497477769852,
+          "min": 985.5708351135254,
+          "last": 14775.497477769852
+        },
+        "pid": {
+          "max": 10696,
+          "min": 10696,
+          "last": 10696
+        },
+        "time_since_restore": {
+          "max": 14775.497477769852,
+          "min": 985.5708351135254,
+          "last": 14775.497477769852
+        },
+        "timesteps_since_restore": {
+          "max": 0,
+          "min": 0,
+          "last": 0
+        },
+        "iterations_since_restore": {
+          "max": 15,
+          "min": 1,
+          "last": 15
+        },
+        "initial_stats/params": {
+          "max": 2380732,
+          "min": 2380732,
+          "last": 2380732
+        },
+        "config/gpus": {
+          "max": 2,
+          "min": 2,
+          "last": 2
+        },
+        "config/seed": {
+          "max": 3,
+          "min": 3,
+          "last": 3
+        },
+        "config/checkpoint": {
+          "max": true,
+          "min": true,
+          "last": true
+        },
+        "config/bs": {
+          "max": 131072,
+          "min": 131072,
+          "last": 131072
+        },
+        "config/lr": {
+          "max": 0.001,
+          "min": 0.001,
+          "last": 0.001
+        },
+        "config/min_lr": {
+          "max": 1e-08,
+          "min": 1e-08,
+          "last": 1e-08
+        },
+        "config/decay": {
+          "max": 0.4,
+          "min": 0.4,
+          "last": 0.4
+        },
+        "config/decay_patience": {
+          "max": 2,
+          "min": 2,
+          "last": 2
+        },
+        "config/unfreeze_patience": {
+          "max": 1,
+          "min": 1,
+          "last": 1
+        },
+        "config/levels": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/factor": {
+          "max": 4,
+          "min": 4,
+          "last": 4
+        },
+        "config/n_iterations": {
+          "max": 15,
+          "min": 15,
+          "last": 15
+        },
+        "config/n_train_batches": {
+          "max": 2000,
+          "min": 2000,
+          "last": 2000
+        },
+        "config/n_test_batches": {
+          "max": 150,
+          "min": 150,
+          "last": 150
+        },
+        "val/current/time": {
+          "max": 26.63512396812439,
+          "min": 24.313130617141724,
+          "last": 24.313130617141724
+        },
+        "val/current/steps": {
+          "max": 150,
+          "min": 150,
+          "last": 150
+        },
+        "val/current/overall time": {
+          "max": 417.46087670326233,
+          "min": 57.70622968673706,
+          "last": 417.46087670326233
+        },
+        "val/current/overall steps": {
+          "max": 2400.0,
+          "min": 300.0,
+          "last": 2400.0
+        },
+        "val/current/mse": {
+          "max": 0.3210622435808182,
+          "min": 0.03572769097983837,
+          "last": 0.036007708435257274
+        },
+        "val/current/L2^2": {
+          "max": 0.0004648781790941333,
+          "min": 5.791810823817893e-05,
+          "last": 5.791810823817893e-05
+        },
+        "val/current/mae": {
+          "max": 0.44103532592455547,
+          "min": 0.1447520461678505,
+          "last": 0.14507315268119175
+        },
+        "val/current/L1": {
+          "max": 0.01652568479379018,
+          "min": 0.005595092410221696,
+          "last": 0.005595092410221696
+        },
+        "val/current/L2": {
+          "max": 0.021561033813204164,
+          "min": 0.007610394749168989,
+          "last": 0.007610394749168989
+        },
+        "val/best/mse": {
+          "max": 0.3210622435808182,
+          "min": 0.03572769097983837,
+          "last": 0.03572769097983837
+        },
+        "val/best/L2^2": {
+          "max": 0.0004648781790941333,
+          "min": 5.791810823817893e-05,
+          "last": 5.791810823817893e-05
+        },
+        "val/best/mae": {
+          "max": 0.44103532592455547,
+          "min": 0.1447520461678505,
+          "last": 0.1447520461678505
+        },
+        "val/best/L1": {
+          "max": 0.01652568479379018,
+          "min": 0.005595092410221696,
+          "last": 0.005595092410221696
+        },
+        "val/last improve/mse": {
+          "max": 1,
+          "min": 0,
+          "last": 1
+        },
+        "val/last improve/L2^2": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "val/last improve/mae": {
+          "max": 1,
+          "min": 0,
+          "last": 1
+        },
+        "val/last improve/L1": {
+          "max": 1,
+          "min": 0,
+          "last": 0
+        },
+        "train/current/time": {
+          "max": 960.121874332428,
+          "min": 958.2781727313995,
+          "last": 960.121874332428
+        },
+        "train/current/steps": {
+          "max": 2000,
+          "min": 2000,
+          "last": 2000
+        },
+        "train/current/overall time": {
+          "max": 14389.801872968674,
+          "min": 959.7546224594116,
+          "last": 14389.801872968674
+        },
+        "train/current/overall steps": {
+          "max": 30000.0,
+          "min": 2000.0,
+          "last": 30000.0
+        },
+        "train/current/mse": {
+          "max": 1011.0910686340331,
+          "min": 1005.7839724121094,
+          "last": 1006.2821939697266
+        },
+        "train/current/L2^2": {
+          "max": 6.256483950853347,
+          "min": 6.183699374884367,
+          "last": 6.251286494970322
+        },
+        "train/current/mae": {
+          "max": 20.718348757743836,
+          "min": 20.695045281410216,
+          "last": 20.69999943828583
+        },
+        "train/current/L1": {
+          "max": 1.5256848837733268,
+          "min": 1.5165018314421177,
+          "last": 1.525231335759163
+        },
+        "train/current/L2": {
+          "max": 2.5012964540120683,
+          "min": 2.4867045210246363,
+          "last": 2.5002572857548726
+        },
+        "train/best/mse": {
+          "max": 1011.0910686340331,
+          "min": 1005.7839724121094,
+          "last": 1005.7839724121094
+        },
+        "train/best/L2^2": {
+          "max": 6.183699374884367,
+          "min": 6.183699374884367,
+          "last": 6.183699374884367
+        },
+        "train/best/mae": {
+          "max": 20.718348757743836,
+          "min": 20.695045281410216,
+          "last": 20.695045281410216
+        },
+        "train/best/L1": {
+          "max": 1.5165018314421177,
+          "min": 1.5165018314421177,
+          "last": 1.5165018314421177
+        },
+        "train/last improve/mse": {
+          "max": 9,
+          "min": 0,
+          "last": 9
+        },
+        "train/last improve/L2^2": {
+          "max": 14,
+          "min": 0,
+          "last": 14
+        },
+        "train/last improve/mae": {
+          "max": 5,
+          "min": 0,
+          "last": 3
+        },
+        "train/last improve/L1": {
+          "max": 14,
+          "min": 0,
+          "last": 14
+        },
+        "initial_stats/val_initial/time": {
+          "max": 31.898723363876343,
+          "min": 31.898723363876343,
+          "last": 31.898723363876343
+        },
+        "initial_stats/val_initial/steps": {
+          "max": 150,
+          "min": 150,
+          "last": 150
+        },
+        "initial_stats/val_initial/overall time": {
+          "max": 31.898723363876343,
+          "min": 31.898723363876343,
+          "last": 31.898723363876343
+        },
+        "initial_stats/val_initial/overall steps": {
+          "max": 150.0,
+          "min": 150.0,
+          "last": 150.0
+        },
+        "initial_stats/val_initial/mse": {
+          "max": 852.6023575846355,
+          "min": 852.6023575846355,
+          "last": 852.6023575846355
+        },
+        "initial_stats/val_initial/L2^2": {
+          "max": 0.9177891500790913,
+          "min": 0.9177891500790913,
+          "last": 0.9177891500790913
+        },
+        "initial_stats/val_initial/mae": {
+          "max": 27.45615374247233,
+          "min": 27.45615374247233,
+          "last": 27.45615374247233
+        },
+        "initial_stats/val_initial/L1": {
+          "max": 0.9578161334991455,
+          "min": 0.9578161334991455,
+          "last": 0.9578161334991455
+        },
+        "initial_stats/val_initial/L2": {
+          "max": 0.9580131262561549,
+          "min": 0.9580131262561549,
+          "last": 0.9580131262561549
+        }
+      },
+      "export_formats": [],
+      "status": "TERMINATED",
+      "start_time": 1591100903.6397192,
+      "logdir": "/workspace/package/exp/avg_heat_paraboloid_2020_06_02_12_28_23/Trainer/Trainer_3_seed=3_2020-06-02_12-28-23qaxvyvfp",
+      "runner": null,
+      "result_logger": null,
+      "last_debug": 1591115714.5174608,
+      "error_file": null,
+      "error_msg": null,
+      "custom_trial_name": null,
+      "saving_to": null,
+      "remote_checkpoint_dir_prefix": null,
+      "checkpoint_freq": 0,
+      "checkpoint_at_end": true,
+      "sync_on_checkpoint": true,
+      "checkpoint_manager": {
+        "_type": "CLOUDPICKLE_FALLBACK",
+        "value": "80049578080000000000008c1b7261792e74756e652e636865636b706f696e745f6d616e61676572948c11436865636b706f696e744d616e616765729493942981947d94288c146b6565705f636865636b706f696e74735f6e756d94477ff00000000000008c165f636865636b706f696e745f73636f72655f6465736394898c165f636865636b706f696e745f73636f72655f61747472948c12747261696e696e675f697465726174696f6e948c1c6e65776573745f70657273697374656e745f636865636b706f696e749468008c0a436865636b706f696e749493942981947d94288c0773746f72616765948c0a70657273697374656e74948c0576616c7565948c8b2f776f726b73706163652f7061636b6167652f6578702f6176675f686561745f70617261626f6c6f69645f323032305f30365f30325f31325f32385f32332f547261696e65722f547261696e65725f335f736565643d335f323032302d30362d30325f31322d32382d323371617876797666702f636865636b706f696e745f31352f6d6f64656c2e707468948c06726573756c74947d94288c0376616c947d94288c0763757272656e74947d94288c0474696d65944740385029540000008c057374657073944b968c0c6f766572616c6c2074696d659447407a175fc04000008c0d6f766572616c6c207374657073944740a2c000000000008c036d736594473fa26f9a344444448c044c325e3294473f0e5da30bbbbbbc8c036d616594473fc291c1cf258bf28c024c3194473f76eae12eb851ec8c024c3294473f7f2c13c8ead3d7758c0462657374947d94288c036d736594473fa24ae660a3d70a8c044c325e3294473f0e5da30bbbbbbc8c036d616594473fc2873c2c28f5c38c024c3194473f76eae12eb851ec758c0c6c61737420696d70726f7665947d94288c036d7365944b018c044c325e32944b008c036d6165944b018c024c31944b0075758c05747261696e947d94288c0763757272656e74947d94288c0474696d659447408e00f9994000008c057374657073944dd0078c0c6f766572616c6c2074696d65944740cc1ae6a3c600008c0d6f766572616c6c207374657073944740dd4c00000000008c036d73659447408f7241eee978d58c044c325e329447401901513f374bc78c036d616594474034b33329c6a7f08c024c3194473ff86758f91eb8528c024c32944740040086e44f3926758c0462657374947d94288c036d73659447408f6e459353f7cf8c044c325e3294474018bc1bb05db22d8c036d616594474034b1ee7cd0e5608c024c3194473ff843976ca5e354758c0c6c61737420696d70726f7665947d94288c036d7365944b098c044c325e32944b0e8c036d6165944b038c024c31944b0e75758c0d696e697469616c5f7374617473947d94288c06706172616d73944abc5324008c0b76616c5f696e697469616c947d94288c0474696d659447403fe612bc0000008c057374657073944b968c0c6f766572616c6c2074696d659447403fe612bc0000008c0d6f766572616c6c20737465707394474062c000000000008c036d73659447408aa4d1a0da740e8c044c325e3294473fed5e875a06d3a08c036d61659447403b74c67dddddde8c024c3194473feea66e051eb8528c024c3294473feea80b24cd15be75758c096c725f67726f757073945d9428473ebb7cdfd9d7bdbf473ebb7cdfd9d7bdbf473ebb7cdfd9d7bdbf473ebb7cdfd9d7bdbf658c0469746572944b0e8c04646f6e6594888c0f74696d6573746570735f746f74616c944e8c0e657069736f6465735f746f74616c944e8c12747261696e696e675f697465726174696f6e944b0f8c0d6578706572696d656e745f6964948c203166333338393666356634643432626561653662656637346662646335333930948c0464617465948c13323032302d30362d30325f31362d33352d3134948c0974696d657374616d70944ac27fd65e8c1074696d655f746869735f697465725f739447408ec38d460000008c0c74696d655f746f74616c5f73944740ccdbbfad5a00008c03706964944dc8298c08686f73746e616d65948c0c346264623265336137363332948c076e6f64655f6970948c0c3139322e3136382e39392e32948c06636f6e666967947d94288c0467707573944b028c046d6f6465948c136176675f686561745f70617261626f6c6f6964948c0473656564944b038c0a636865636b706f696e7494888c03706465948c0f686561745f70617261626f6c6f6964948c036e6574948c0e6d756c74696c6576656c5f6e6574948c0a6e6f726d5f6c61796572948c0962617463686e6f726d948c036f7074948c056164616d77948c026273944a000002008c026c7294473f50624dd2f1a9fc8c066d696e5f6c7294473e45798ee2308c3a8c05646563617994473fd999999999999a8c0e64656361795f70617469656e6365944b028c08756e667265657a65948c03616c6c948c11756e667265657a655f70617469656e6365944b018c066c6576656c73944b048c06666163746f72944b048c0c6e5f697465726174696f6e73944b0f8c0f6e5f747261696e5f62617463686573944dd0078c0e6e5f746573745f62617463686573944b96758c1274696d655f73696e63655f726573746f7265944740ccdbbfad5a00008c1774696d6573746570735f73696e63655f726573746f7265944b008c18697465726174696f6e735f73696e63655f726573746f7265944b0f8c08747269616c5f6964948c053030303033948c0e6578706572696d656e745f746167948c08335f736565643d33947575628c186e65776573745f6d656d6f72795f636865636b706f696e7494680b2981947d9428680e8c066d656d6f72799468104e68127d9475628c115f626573745f636865636b706f696e7473945d9468008c0951756575654974656d9493942981947d94288c087072696f72697479944b0f6810680c7562618c0b5f6d656d62657273686970948f9428680c9075622e"
+      },
+      "restore_path": null,
+      "restoring_from": null,
+      "num_failures": 0,
+      "results": "80044e2e",
+      "best_result": "80044e2e",
+      "param_config": "80044e2e",
+      "extra_arg": "80044e2e",
+      "_nonjson_fields": [
+        "loggers",
+        "sync_to_driver_fn",
+        "results",
+        "best_result",
+        "param_config",
+        "extra_arg"
+      ],
+      "resuming_from": null,
+      "__logger_started__": false
+    }
+  ],
+  "runner_data": {
+    "_global_time_limit": Infinity,
+    "_total_time": 58639.11511683464,
+    "_iteration": 68,
+    "_has_errored": false,
+    "_fail_fast": false,
+    "_verbose": true,
+    "_server_port": 4321,
+    "_cached_trial_decisions": {},
+    "_should_stop_experiment": false,
+    "_local_checkpoint_dir": "/workspace/package/exp/avg_heat_paraboloid_2020_06_02_12_28_23/Trainer",
+    "_remote_checkpoint_dir": null,
+    "_stopper": {
+      "_type": "CLOUDPICKLE_FALLBACK",
+      "value": "80049527000000000000008c107261792e74756e652e73746f70706572948c0b4e6f6f7053746f707065729493942981942e"
+    },
+    "_resumed": false,
+    "_start_time": 1591100903.0819473,
+    "_last_checkpoint_time": 1591115729.3847344,
+    "_checkpoint_period": 10,
+    "_session_str": "2020-06-02_12-28-23",
+    "checkpoint_file": "/workspace/package/exp/avg_heat_paraboloid_2020_06_02_12_28_23/Trainer/experiment_state-2020-06-02_12-28-23.json",
+    "launch_web_server": false
+  },
+  "stats": {
+    "start_time": 1591100903.0819473,
+    "timestamp": 1591115729.3847344
+  }
+}
