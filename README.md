@@ -1,5 +1,5 @@
 # Numerically Solving Parametric Families of High-Dimensional Kolmogorov Partial Differential Equations via Deep Learning
-> Accompanying code for [NeurIPS 2020 paper](https://arxiv.org/pdf/2011.04602) ([Poster](https://homepage.univie.ac.at/julius.berner/data/NeurIPS20_Berner.pdf)).
+> Accompanying code for [NeurIPS 2020 paper](https://arxiv.org/pdf/2011.04602) ([Poster](https://jberner.info/data/NeurIPS20_Berner.pdf)).
 > Deep Learning based algorithm for solving a parametrized family of high-dimensional Kolmogorov PDEs.
 > Implemented in PyTorch and Tune.
 
